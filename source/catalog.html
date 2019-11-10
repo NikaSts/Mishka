@@ -8,7 +8,7 @@
 
 <body>
 
-  <header class="page-header page-header--catalog">
+  <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35"
         alt="Логотип магазина Мишка">
@@ -16,73 +16,79 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list cite-list">
-        <li class="cite-list__item">Каталог товаров</li>
-        <li class="cite-list__item">Вязание на заказ</li>
-        <li class="cite-list__item">Поиск по сайту</li>
+        <li class="cite-list__item">
+          <a class="cite-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="cite-list__item">
+          <a class="cite-list__link" href="form.html">Вязание на заказ</a>
+        </li>
       </ul>
       <ul class="main-nav__list user-list">
-        <li class="user-list__item">Корзина: пока пуста</li>
+        <li class="user-list__item">
+          <a class="user-list__search" href="#">Поиск по сайту</a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__cart" href="#">Корзина: пока пуста</a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title page-main__title--catalog">Каталог товаров</h1>
+    <h1 class="page-main__title">Каталог товаров</h1>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог-товаров</h2>
       <ul class="catalog__list">
         <li class="catalog__item catalog-item">
-          <a class="catalog-item__wrapper" href="#">
+          <a class="catalog-item__link" href="#">
             <img class="catalog-item__image" src="https://via.placeholder.com/260x195" width="260" height="195"
               alt="Вязаная игрушка, заяц в голубом комбинезоне">
             <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
           </a>
           <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
           <p class="catalog-item__price">1 200 руб.</p>
-          <button class="catalog-item__button" type="button"></button>
+          <button class="catalog-item__cart" href="#"></button>
         </li>
         <li class="catalog__item catalog-item">
-          <a class="catalog-item__wrapper" href="#">
+          <a class="catalog-item__link" href="#">
             <img class="catalog-item__image" src="https://via.placeholder.com/260x195" width="260" height="195"
               alt="Вязаная корзинка белая с красным">
             <h3 class="catalog-item__title">Корзинка для белья</h3>
           </a>
           <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
           <p class="catalog-item__price">690 руб.</p>
-          <button class="catalog-item__button" type="button"></button>
+          <button class="catalog-item__cart" href="#"></button>
         </li>
         <li class="catalog__item catalog-item">
-          <a class="catalog-item__wrapper" href="#">
+          <a class="catalog-item__link" href="#">
             <img class="catalog-item__image" src="https://via.placeholder.com/260x195" width="260" height="195"
               alt="Вязаная корзинка белая со светло-зеленым">
             <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
           </a>
           <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
           <p class="catalog-item__price">1 500 руб.</p>
-          <button class="catalog-item__button" type="button"></button>
+          <button class="catalog-item__cart" href="#"></button>
         </li>
       </ul>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мишка в Инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мишка в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мишка в Твиттере</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">Мишка в Инстаграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Мишка в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">Мишка в Твиттере</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 
