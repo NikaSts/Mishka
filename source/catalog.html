@@ -36,8 +36,8 @@
 
   <main class="page-main">
     <h1 class="page-main__title">Каталог товаров</h1>
-    <section class="catalog">
-      <h2 class="visually-hidden">Каталог-товаров</h2>
+    <section class="catalog" aria-labelledby="our-catalog">
+      <h2 class="visually-hidden" id="our-catalog">Каталог-товаров</h2>
       <ul class="catalog__list catalog-list">
         <li class="catalog-list__item catalog-item">
           <a class="catalog-item__link" href="#">
@@ -86,7 +86,10 @@
     </ul>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__logo" src="https://via.placeholder.com/27x34" width="27" height="34"
+          alt="Логотип HTML Academy">
+      </a>
     </div>
   </footer>
 
