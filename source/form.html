@@ -36,36 +36,56 @@
 
   <main class="page-main">
     <h1 class="page-main__title">Вязание на заказ</h1>
-    <section class="form">
+    <section class="form" aria-labelledby="place-order">
+      <h2 class="visually-hidden" id="place-order">Форма заказа</h2>
       <p class="form-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся
         с вами, чтобы уточнить детали.</p>
-      <form class="form-filters" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="form__product-type fieldset">
-          <legend class="form__legend">Тип</legend>
-          <input class="form__input input-radio" type="radio" id="home" checked>
-          <label class="form__label" for="home">Аксессуар для интерьера</label>
-          <input class="form__input input-radio" type="radio" id="toy">
-          <label class="form__label" for="toy">Детская игрушка</label>
+      <form class="form-filters filters" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="filters__product-type fieldset">
+          <legend class="filters__legend">Тип</legend>
+          <input class="filters__input filters__input--radio" type="radio" id="accessory " checked>
+          <label class="filters__label" for="accessory ">Аксессуар для интерьера</label>
+          <input class="filters__input filters__input--radio" type="radio" id="toy">
+          <label class="filters__label" for="toy">Детская игрушка</label>
         </fieldset>
-        <fieldset class="form__product-color fieldset">
-          <legend class="form__legend">Цвет</legend>
-          <input class="form__input input-checkbox" type="checkbox" name="color" value="white" id="white" checked>
-          <label class="form__label" for="white">Белый</label>
-          <input class="form__input input-checkbox" type="checkbox" name="color" value="grey" id="grey" checked>
-          <label class="form__label" for="grey">Серый</label>
-          <input class="form__input input-checkbox" type="checkbox" name="color" value="blue" id="blue">
-          <label class="form__label" for="blue">«Тиффани»</label>
-          <input class="form__input input-checkbox" type="checkbox" name="color" value="black" id="black">
-          <label class="form__label" for="black">Черный</label>
-          <input class="form__input input-checkbox" type="checkbox" name="color" value="pink" id="pink">
-          <label class="form__label" for="pink">Розовый</label>
-          <input class="form__input input-checkbox" type="checkbox" name="color" value="orange" id="orange">
-          <label class="form__label" for="orange">Оранжевый</label>
+        <fieldset class="filters__product-color fieldset">
+          <legend class="filters__legend">Цвет</legend>
+          <input class="filters__input filters__input--checkbox" type="checkbox" name="color" value="white" id="white" checked>
+          <label class="filters__label" for="white">Белый</label>
+          <input class="filters__input filters__input--checkbox" type="checkbox" name="color" value="grey" id="grey" checked>
+          <label class="filters__label" for="grey">Серый</label>
+          <input class="filters__input filters__input--checkbox" type="checkbox" name="color" value="blue" id="blue">
+          <label class="filters__label" for="blue">«Тиффани»</label>
+          <input class="filters__input filters__input--checkbox" type="checkbox" name="color" value="black" id="black">
+          <label class="filters__label" for="black">Черный</label>
+          <input class="filters__input filters__input--checkbox" type="checkbox" name="color" value="pink" id="pink">
+          <label class="filters__label" for="pink">Розовый</label>
+          <input class="filters__input filters__input--checkbox" type="checkbox" name="color" value="orange" id="orange">
+          <label class="filters__label" for="orange">Оранжевый</label>
         </fieldset>
-        <fieldset сlass="">
-
+        <fieldset class="filters__name fieldset">
+          <legend class="filters__legend">ФИО</legend>
+          <label class="filters__label" for="name">Имя:</label>
+          <input class="filters__input filters__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+          <label class="filters__label" for="surname">Фамилия:</label>
+          <input class="filters__input filters__input--name" name="surname" type="text" id="surname" placeholder="Укажите фамилию*">
+          <label class="filters__label" for="patronymic">Отчество:</label>
+          <input class="filters__input filters__input--name" name="patronymic" type="text" id="patronymic" placeholder="Отчество, если желаете">
         </fieldset>
-
+        <fieldset class="filters__phone fieldset">
+            <legend class="filters__legend">Тел</legend>
+            <input class="filters__input filters__input--phone" type="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        </fieldset>
+        <fieldset class="filters__email fieldset">
+            <legend class="filters__legend">E-mail</legend>
+            <input class="filters__input filters__input--email" type="email" name="email" placeholder="Ваш Email*">
+        </fieldset>
+        <fieldset class="filters__message fieldset">
+            <legend class="filters__legend">Доп</legend>
+            <textarea class="filters__input filters__input--message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <p class="form__note">*Поля обязательны для заполнения</p>
+        <button class="form__send-button button" type="submit">Отправить заказ</button>
       </form>
     </section>
   </main>
@@ -84,7 +104,10 @@
     </ul>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__logo" src="https://via.placeholder.com/27x34" width="27" height="34"
+          alt="Логотип HTML Academy">
+      </a>
     </div>
   </footer>
 
