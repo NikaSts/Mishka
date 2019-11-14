@@ -48,9 +48,9 @@
         </li>
       </ul>
     </section>
-    <section class="promo">
-      <h2 class="promo__title title-big">Вязаные корзинки</h2>
-      <p class="promo__subtitle">Товар недели</p>
+    <section class="promo" aria-labelledby="week-promo">
+      <p class="promo__title title-big">Вязаные корзинки</p>
+      <h2 class="promo__subtitle" id="week-promo">Товар недели</h2>
       <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех
         размерах.</p>
       <table class="promo__details">
@@ -83,6 +83,41 @@
         <li class="about-us__item about-us__item--gift-box">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
+    <section class="review" aria-labelledby="clients-review">
+      <h2 class="review__title title-big" id="clients-review">Отзывы</h2>
+      <blockquote class="review__item">
+        <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+          лайков, как у популярных
+          инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+          стильными, а также набирают больше лайков!</p>
+        <cite class="review__author-name">Анастасия Красильникова</cite>
+        <p class="review__author-id">@misssssiskras</p>
+      </blockquote>
+      <div class="review__button review-button">
+        <button class="review-button__button review-button__button--prev"></button>
+        <button class="review-button__button review-button__button--next"></button>
+      </div>
+      <a class="review__write-button button" href="#">Написать</a>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title title-small">Контакты</h2>
+      <table class="contacts__details">
+        <tr class="contacts__email">
+          <th class="contacts__field">e-mail:</th>
+          <td class="contacts__value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+        </tr>
+        <tr class="contacts__address">
+          <th class="contacts__field">адрес:</th>
+          <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+        </tr>
+      </table>
+      <div class="contacts__map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c677730e759535e6dd46fbb03d2aa5310cea92fa5a7c9a58f5efc6e455edc52&amp;source=constructor"
+          width="100%" height="457" frameborder="0"></iframe>
+      </div>
+      <a class="contacts__feedback-button button" href="#">Напишите нам</a>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -99,9 +134,27 @@
     </ul>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__logo" src="https://via.placeholder.com/27x34" width="27" height="34"
+          alt="Логотип HTML Academy">
+      </a>
     </div>
   </footer>
+
+  <section class="modal">
+    <h2 class="modal__title title-big">Добавить в корзину</h2>
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="modal__size">
+        <legend class="modal__legend">Выберите размер:</legend>
+        <div class="modal__inputs-wrapper">
+          <input class="modal__input modal__input--small" type="radio" name="small" checked>
+          <input class="modal__input modal__input--medium" type="radio" name="medium">
+          <input class="modal__input modal__input--large" type="radio" name="large">
+        </div>
+      </fieldset>
+      <button class="modal__add-button button" type="submit">Добавить</button>
+    </form>
+  </section>
 
 </body>
 
