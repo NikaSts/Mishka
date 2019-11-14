@@ -15,20 +15,20 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__open-button" type="button">Открыть меню</button>
-      <ul class="main-nav__list cite-list">
-        <li class="cite-list__item">
-          <a class="cite-list__link" href="catalog.html">Каталог товаров</a>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="cite-list__item">
-          <a class="cite-list__link" href="form.html">Вязание на заказ</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
-      <ul class="main-nav__list cite-list cite-list--user">
-        <li class="cite-list__item">
-          <a class="cite-list__link cite-list__link--search" href="#">Поиск по сайту</a>
+      <ul class="main-nav__list site-list site-list--user">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
         </li>
-        <li class="cite-list__item">
-          <a class="cite-list__link cite-list__link--cart" href="#">Корзина: пока пуста</a>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--cart" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -113,7 +113,8 @@
       </table>
       <div class="contacts__map">
         <iframe
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c677730e759535e6dd46fbb03d2aa5310cea92fa5a7c9a58f5efc6e455edc52&amp;source=constructor" height="457"></iframe>
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c677730e759535e6dd46fbb03d2aa5310cea92fa5a7c9a58f5efc6e455edc52&amp;source=constructor"
+          height="457"></iframe>
       </div>
       <a class="contacts__feedback-button button" href="#">Напишите нам</a>
     </section>
@@ -142,16 +143,16 @@
 
   <section class="modal">
     <h2 class="modal__title title-big">Добавить в корзину</h2>
-    <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset class="modal__size">
-        <legend class="modal__legend">Выберите размер:</legend>
-        <div class="modal__inputs-wrapper">
-          <input class="modal__input modal__input--small" type="radio" name="small" checked>
-          <input class="modal__input modal__input--medium" type="radio" name="medium">
-          <input class="modal__input modal__input--large" type="radio" name="large">
+    <form class="modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="modal-form__size">
+        <legend class="modal-form__legend">Выберите размер:</legend>
+        <div class="modal-form__inputs-wrapper">
+          <input class="modal-form__input modal-form__input--small" type="radio" name="size" value="small" checked>
+          <input class="modal-form__input modal-form__input--medium" type="radio" name="size" value="medium">
+          <input class="modal-form__input modal-form__input--large" type="radio" name="size" value="large">
         </div>
       </fieldset>
-      <button class="modal__add-button button" type="submit">Добавить</button>
+      <button class="modal-form__add-button button" type="submit">Добавить</button>
     </form>
   </section>
 
