@@ -15,20 +15,20 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__open-button" type="button">Открыть меню</button>
-      <ul class="main-nav__list cite-list">
-        <li class="cite-list__item">
-          <a class="cite-list__link">Каталог товаров</a>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link">Каталог товаров</a>
         </li>
-        <li class="cite-list__item">
-          <a class="cite-list__link" href="form.html">Вязание на заказ</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
-      <ul class="main-nav__list cite-list cite-list--user">
-        <li class="cite-list__item">
-          <a class="cite-list__link cite-list__link--search" href="#">Поиск по сайту</a>
+      <ul class="main-nav__list site-list site-list--user">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
         </li>
-        <li class="cite-list__item">
-          <a class="cite-list__link cite-list__link--cart" href="#">Корзина: пока пуста</a>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--cart" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -36,8 +36,8 @@
 
   <main class="page-main">
     <h1 class="page-main__title">Каталог товаров</h1>
-    <section class="catalog">
-      <h2 class="visually-hidden">Каталог-товаров</h2>
+    <section class="catalog" aria-labelledby="our-catalog">
+      <h2 class="visually-hidden" id="our-catalog">Каталог-товаров</h2>
       <ul class="catalog__list catalog-list">
         <li class="catalog-list__item catalog-item">
           <a class="catalog-item__link" href="#">
@@ -71,6 +71,20 @@
         </li>
       </ul>
     </section>
+    <section class="manufacture">
+      <h2 class="manufacture__title">Процесс производства</h2>
+      <video class="manufacture__video" poster="https://via.placeholder.com/260x150" width="260" height="150"
+        aria-describedby="video-description">
+        <source src="video.ogv" type="video/ogg">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+      </video>
+      <p class="visually-hidden" id="video-description">Аудиодескрипция с описанием происходящего на видео</p>
+      <p class="manufacture__text">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+      </p>
+      <a class="manufacture__order-button button" href="#">Сделать заказ</a>
+    </section>
   </main>
   <footer class="page-footer">
     <ul class="page-footer__social-list social-list">
@@ -86,9 +100,30 @@
     </ul>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__logo" src="https://via.placeholder.com/27x34" width="27" height="34"
+          alt="Логотип HTML Academy">
+      </a>
     </div>
   </footer>
+
+  <section class="modal">
+    <h2 class="modal__title title-big">Добавить в корзину</h2>
+    <form class="modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="modal-form__fieldset">
+        <legend class="modal-form__legend">Выберите размер:</legend>
+        <div class="modal-form__inputs-wrapper">
+          <label class="modal-form__label" for="small">S</label>
+          <input class="modal-form__input" type="radio" name="size" value="small" id="small" checked>
+          <label class="modal-form__label" for="medium">M</label>
+          <input class="modal-form__input" type="radio" name="size" value="medium" id="medium">
+          <label class="modal-form__label" for="large">L</label>
+          <input class="modal-form__input" type="radio" name="size" value="large" id="large">
+        </div>
+      </fieldset>
+      <button class="modal-form__add-button button" type="submit">Добавить</button>
+    </form>
+  </section>
 
 </body>
 
