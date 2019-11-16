@@ -1,0 +1,7 @@
+.modal {
+  @include size(320px, 336px);
+}
+
+.modal__title {
+  @include title-big;
+}

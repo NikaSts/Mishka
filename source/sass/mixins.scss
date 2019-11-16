@@ -1,0 +1,36 @@
+@mixin no-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+@mixin title-med {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: left;
+  color: $black;
+}
+
+@mixin title-small {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: left;
+  color: $black;
+}
+
+@mixin title-big {
+  font-size: 30px;
+  line-height: 57px;
+  font-weight: bold;
+  text-align: center;
+  color: $black;
+}
+
+@mixin size ($width, $height) {
+  width: $width;
+  height: $height;
+}
