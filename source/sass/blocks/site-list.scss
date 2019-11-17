@@ -1,8 +1,15 @@
 .site-list__link {
-  font-family: inherit;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
-  text-align: left;
   color: $black;
+}
+
+.site-list__link:hover,
+.site-list__link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-list__link:active {
+  color: rgba(0, 0, 0, 0.3);
 }

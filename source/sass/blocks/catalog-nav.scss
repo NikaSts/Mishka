@@ -3,11 +3,11 @@
 }
 
 .catalog-nav__link {
-  font-family: inherit;
+  @include size(320px, 103px);
+  display: block;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
-  text-align: left;
   color: $white;
 }
 
@@ -17,4 +17,8 @@
 
 .catalog-nav__link--toys {
   background-color: $medium-green;
+}
+
+.catalog-nav__link:active {
+  color: rgba(255, 255, 255, 0.3);
 }

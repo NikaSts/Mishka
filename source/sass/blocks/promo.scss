@@ -1,3 +1,43 @@
 .promo__title {
   @include title-med;
 }
+
+.promo__subtitle {
+  font-size: 17px;
+  line-height: 20px;
+  color: $light-green;
+}
+
+.promo__description {
+  font-size: 17px;
+  line-height: 20px;
+  color: $dark-grey;
+}
+
+.promo__row {
+  border-bottom: solid 1px $light-grey;
+}
+
+.promo__field,
+.promo__value {
+  font-size: 15px;
+  line-height: 20px;
+  color: $dark-grey;
+}
+
+.promo__request-button {
+  @include size(260px, 52px);
+  @include button(20px, $dark-grey, $white);
+  border: solid 2px $dark-grey;
+}
+
+.promo__request-button:hover,
+.promo__request-button:focus {
+  color: $white;
+  background-color: $dark-grey;
+}
+
+.promo__request-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: $dark-grey;
+}

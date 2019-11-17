@@ -1,7 +1,39 @@
+.contacts__title {
+  @include title-small;
+}
+
+.contacts__link {
+  color: $dark-grey;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: $light-green;
+}
+
+.contacts__link:active {
+  color: rgba(70, 193, 174, 0.3);
+}
+
 .contacts__text {
   font-size: 17px;
   line-height: 30px;
-  font-weight: normal;
-  text-align: left;
   color: $dark-grey;
+}
+
+.contacts__feedback-button {
+  @include size(260px, 52px);
+  @include button(20px, $dark-grey, $white);
+  border: solid 2px $dark-grey;
+}
+
+.contacts__feedback-button:hover,
+.contacts__feedback-button:focus {
+  color: $white;
+  background-color: $dark-grey;
+}
+
+.contacts__feedback-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: $dark-grey;
 }

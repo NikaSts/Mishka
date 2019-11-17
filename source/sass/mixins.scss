@@ -10,7 +10,6 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-  text-align: left;
   color: $black;
 }
 
@@ -18,7 +17,6 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  text-align: left;
   color: $black;
 }
 
@@ -33,4 +31,16 @@
 @mixin size ($width, $height) {
   width: $width;
   height: $height;
+}
+
+@mixin button($line-height, $font-color, $background-color) {
+  display: block;
+  font-size: 17px;
+  line-height: $line-height;
+  font-weight: bold;
+  text-align: center;
+  color: $font-color;
+  background-color: $background-color;
+  text-transform: uppercase;
+  cursor: pointer;
 }

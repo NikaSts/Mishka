@@ -14,8 +14,8 @@
       <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35"
         alt="Логотип магазина Мишка">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__open-button" type="button">Открыть меню</button>
+    <nav class="page-header__nav main-nav">
+      <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link">Каталог товаров</a>
@@ -80,6 +80,7 @@
         <source src="video.mp4" type="video/mp4">
         <source src="video.webm" type="video/webm">
       </video>
+      <button class="manufacture__play-button"></button>
       <p class="visually-hidden" id="video-description">Аудиодескрипция с описанием происходящего на видео</p>
       <p class="manufacture__text">
         По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
@@ -109,17 +110,17 @@
   </footer>
 
   <section class="modal">
-    <h2 class="modal__title title-big">Добавить в корзину</h2>
+    <h2 class="modal__title">Добавить в корзину</h2>
     <form class="modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="modal-form__fieldset">
         <legend class="modal-form__legend">Выберите размер:</legend>
         <div class="modal-form__inputs-wrapper">
           <label class="modal-form__label" for="small">S</label>
-          <input class="modal-form__input" type="radio" name="size" value="small" id="small" checked>
+          <input class="visually-hidden" type="radio" name="size" value="small" id="small" checked>
           <label class="modal-form__label" for="medium">M</label>
-          <input class="modal-form__input" type="radio" name="size" value="medium" id="medium">
+          <input class="visually-hidden" type="radio" name="size" value="medium" id="medium">
           <label class="modal-form__label" for="large">L</label>
-          <input class="modal-form__input" type="radio" name="size" value="large" id="large">
+          <input class="visually-hidden" type="radio" name="size" value="large" id="large">
         </div>
       </fieldset>
       <button class="modal-form__add-button button" type="submit">Добавить</button>

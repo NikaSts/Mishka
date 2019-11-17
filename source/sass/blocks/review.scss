@@ -1,3 +1,20 @@
 .review__title {
   @include title-med;
 }
+
+.review__write-button {
+  @include size(260px, 52px);
+  @include button(20px, $dark-grey, $white);
+  border: solid 2px $dark-grey;
+}
+
+.review__write-button:hover,
+.review__write-button:focus {
+  color: $white;
+  background-color: $dark-grey;
+}
+
+.review__write-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: $dark-grey;
+}

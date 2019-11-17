@@ -1,3 +1,34 @@
 .modal-form__fieldset {
   border: none;
 }
+
+.modal-form__legend {
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: $dark-grey;
+}
+
+.modal-form__label {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: $dark-grey;
+}
+
+.modal-form__add-button {
+  @include size(260px, 52px);
+  @include button(16px, $white, $light-green);
+  border: none;
+}
+
+.modal-form__add-button:hover,
+.modal-form__add-button:focus {
+  background-color: $medium-green;
+}
+
+.modal-form__add-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: $medium-green;
+}
