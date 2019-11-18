@@ -1,5 +1,5 @@
 .review__title {
-  @include title-med;
+  @include title(25px, 30px);
 }
 
 .review__write-button {

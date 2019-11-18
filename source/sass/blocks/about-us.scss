@@ -1,5 +1,5 @@
 .about-us__title {
-  @include title-med;
+  @include title(25px, 30px);
 }
 
 .about-us__list {

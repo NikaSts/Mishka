@@ -1,5 +1,5 @@
 .promo__title {
-  @include title-med;
+  @include title(25px, 30px);
 }
 
 .promo__subtitle {
@@ -22,7 +22,6 @@
 .promo__value {
   font-size: 15px;
   line-height: 20px;
-  color: $dark-grey;
 }
 
 .promo__request-button {

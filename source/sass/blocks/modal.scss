@@ -3,5 +3,6 @@
 }
 
 .modal__title {
-  @include title-big;
+  @include title(30px, 57px);
+  text-align: center;
 }

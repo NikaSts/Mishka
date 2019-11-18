@@ -6,25 +6,10 @@
   list-style: none;
 }
 
-@mixin title-med {
-  font-size: 25px;
-  line-height: 30px;
+@mixin title($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
   font-weight: bold;
-  color: $black;
-}
-
-@mixin title-small {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  color: $black;
-}
-
-@mixin title-big {
-  font-size: 30px;
-  line-height: 57px;
-  font-weight: bold;
-  text-align: center;
   color: $black;
 }
 
@@ -33,14 +18,14 @@
   height: $height;
 }
 
-@mixin button($line-height, $font-color, $background-color) {
+@mixin button($line-height, $font-color, $bg-color) {
   display: block;
   font-size: 17px;
   line-height: $line-height;
   font-weight: bold;
   text-align: center;
   color: $font-color;
-  background-color: $background-color;
+  background-color: $bg-color;
   text-transform: uppercase;
   cursor: pointer;
 }

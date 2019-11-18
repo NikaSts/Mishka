@@ -1,5 +1,5 @@
 .contacts__title {
-  @include title-small;
+  @include title(18px, 30px);
 }
 
 .contacts__link {
@@ -18,7 +18,6 @@
 .contacts__text {
   font-size: 17px;
   line-height: 30px;
-  color: $dark-grey;
 }
 
 .contacts__feedback-button {
