@@ -10,9 +10,9 @@
 .manufacture__order-button {
   @include button($dark-grey, $white);
 
-    /* временно */
-    width: 260px;
-    height: 52px;
+  /* временно */
+  width: 260px;
+  height: 52px;
 
   border: solid 2px $dark-grey;
 }
