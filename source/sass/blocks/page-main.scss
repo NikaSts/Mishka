@@ -1,12 +1,18 @@
 .page-main__title {
-  @include size(320px, 177px);
   @include title(27px, 30px);
-  display: block;
+
+  /* временно */
+  width: 320px;
+  height: 177px;
+
   text-align: center;
   background-color: $light-grey;
 }
 
 .page-main__title--index {
+  /* временно */
+  height: 270px;
+
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;

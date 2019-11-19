@@ -3,6 +3,7 @@
 @import "global-properties.scss";
 @import "mixins.scss";
 @import "visually-hidden.scss";
+/* index.html */
 @import "blocks/page-header.scss";
 @import "blocks/page-main.scss";
 @import "blocks/main-nav.scss";
@@ -15,8 +16,10 @@
 @import "blocks/page-footer.scss";
 @import "blocks/social-list.scss";
 @import "blocks/copyright.scss";
+/* modal */
 @import "blocks/modal.scss";
 @import "blocks/modal-form.scss";
+/* catalog.html */
 @import "blocks/catalog.scss";
 @import "blocks/catalog-list.scss";
 @import "blocks/catalog-item.scss";

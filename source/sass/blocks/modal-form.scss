@@ -22,8 +22,12 @@
 }
 
 .modal-form__add-button {
-  @include size(260px, 52px);
-  @include button(16px, $white, $light-green);
+  @include button($white, $light-green);
+
+  /* временно */
+  width: 260px;
+  height: 52px;
+
   border: none;
 }
 
@@ -33,6 +37,6 @@
 }
 
 .modal-form__add-button:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba($white, 0.3);
   background-color: $medium-green;
 }

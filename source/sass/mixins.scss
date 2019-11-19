@@ -11,15 +11,10 @@
   color: $black;
 }
 
-@mixin size ($width, $height) {
-  width: $width;
-  height: $height;
-}
-
-@mixin button($line-height, $font-color, $bg-color) {
+@mixin button($font-color, $bg-color) {
   display: block;
   font-size: 17px;
-  line-height: $line-height;
+  line-height: 20px;
   font-weight: bold;
   text-align: center;
   color: $font-color;

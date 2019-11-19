@@ -3,7 +3,10 @@
 }
 
 .catalog-nav__link {
-  @include size(320px, 103px);
+  /* временно */
+  width: 320px;
+  height: 103px;
+
   display: block;
   font-size: 19px;
   line-height: 24px;

@@ -1,8 +1,10 @@
 .modal {
-  @include size(320px, 336px);
+  /* временно */
+  width: 320px;
+  height: 336px;
 }
 
 .modal__title {
-  @include title(30px, 57px);
+  @include title(25px, 30px);
   text-align: center;
 }

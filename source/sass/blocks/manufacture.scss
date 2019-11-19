@@ -2,19 +2,17 @@
   @include title(17px, 24px);
 }
 
-.manufacture__play-button {
-  @include size(101px, 77px);
-  display: block;
-  background-color: $light-green;
-  border: solid 4px $white;
-  border-radius: 15px;
-}
-
 .manufacture__text {
   font-size: 15px;
   line-height: 30px;
 }
 
 .manufacture__order-button {
-  @include button(16px, $dark-grey, $white);
+  @include button($dark-grey, $white);
+
+    /* временно */
+    width: 260px;
+    height: 52px;
+
+  border: solid 2px $dark-grey;
 }
