@@ -1,6 +1,26 @@
-html,
-body {
-  min-width: 1000px;
-  margin: 0;
-  padding: 0;
-}
+@import "fonts.scss";
+@import "colors.scss";
+@import "global-properties.scss";
+@import "mixins.scss";
+@import "visually-hidden.scss";
+/* index.html */
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/catalog-nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/about-us.scss";
+@import "blocks/review.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/copyright.scss";
+/* modal */
+@import "blocks/modal.scss";
+@import "blocks/modal-form.scss";
+/* catalog.html */
+@import "blocks/catalog.scss";
+@import "blocks/catalog-list.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/manufacture.scss";

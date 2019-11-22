@@ -1,0 +1,19 @@
+.manufacture__title {
+  @include title(17px, 24px);
+}
+
+.manufacture__text {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.manufacture__order-button {
+  @include button($dark-grey, $white);
+  display: block;
+
+  /* временно */
+  width: 192px;
+  height: 52px;
+
+  border: solid 2px $dark-grey;
+}

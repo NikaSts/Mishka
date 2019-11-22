@@ -1,0 +1,24 @@
+.review__title {
+  @include title(25px, 30px);
+}
+
+.review__write-button {
+  @include button($dark-grey, $white);
+
+  /* временно */
+  width: 260px;
+  height: 52px;
+
+  border: solid 2px $dark-grey;
+}
+
+.review__write-button:hover,
+.review__write-button:focus {
+  color: $white;
+  background-color: $dark-grey;
+}
+
+.review__write-button:active {
+  color: rgba($white, 0.3);
+  background-color: $dark-grey;
+}

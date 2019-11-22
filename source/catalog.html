@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -13,8 +16,8 @@
       <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35"
         alt="Логотип магазина Мишка">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__open-button" type="button">Открыть меню</button>
+    <nav class="page-header__nav main-nav">
+      <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link">Каталог товаров</a>
@@ -41,7 +44,7 @@
       <ul class="catalog__list catalog-list">
         <li class="catalog-list__item catalog-item">
           <a class="catalog-item__link" href="#">
-            <img class="catalog-item__image" src="https://via.placeholder.com/260x195" width="260" height="195"
+            <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195"
               alt="Вязаная игрушка, заяц в голубом комбинезоне">
             <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
           </a>
@@ -51,7 +54,7 @@
         </li>
         <li class="catalog-list__item catalog-item">
           <a class="catalog-item__link" href="#">
-            <img class="catalog-item__image" src="https://via.placeholder.com/260x195" width="260" height="195"
+            <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195"
               alt="Вязаная корзинка белая с красным">
             <h3 class="catalog-item__title">Корзинка для белья</h3>
           </a>
@@ -61,7 +64,7 @@
         </li>
         <li class="catalog-list__item catalog-item">
           <a class="catalog-item__link" href="#">
-            <img class="catalog-item__image" src="https://via.placeholder.com/260x195" width="260" height="195"
+            <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195"
               alt="Вязаная корзинка белая со светло-зеленым">
             <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
           </a>
@@ -83,7 +86,7 @@
       <p class="manufacture__text">
         По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
       </p>
-      <a class="manufacture__order-button button" href="#">Сделать заказ</a>
+      <a class="manufacture__order-button" href="#">Сделать заказ</a>
     </section>
   </main>
   <footer class="page-footer">
@@ -108,17 +111,17 @@
   </footer>
 
   <section class="modal">
-    <h2 class="modal__title title-big">Добавить в корзину</h2>
+    <h2 class="modal__title">Добавить в корзину</h2>
     <form class="modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="modal-form__fieldset">
         <legend class="modal-form__legend">Выберите размер:</legend>
         <div class="modal-form__inputs-wrapper">
           <label class="modal-form__label" for="small">S</label>
-          <input class="modal-form__input" type="radio" name="size" value="small" id="small" checked>
+          <input class="visually-hidden" type="radio" name="size" value="small" id="small" checked>
           <label class="modal-form__label" for="medium">M</label>
-          <input class="modal-form__input" type="radio" name="size" value="medium" id="medium">
+          <input class="visually-hidden" type="radio" name="size" value="medium" id="medium">
           <label class="modal-form__label" for="large">L</label>
-          <input class="modal-form__input" type="radio" name="size" value="large" id="large">
+          <input class="visually-hidden" type="radio" name="size" value="large" id="large">
         </div>
       </fieldset>
       <button class="modal-form__add-button button" type="submit">Добавить</button>
