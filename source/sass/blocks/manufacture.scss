@@ -3,12 +3,13 @@
 }
 
 .manufacture__text {
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .manufacture__order-button {
   @include button($dark-grey, $white);
+  display: block;
 
   /* временно */
   width: 192px;
