@@ -1,0 +1,53 @@
+
+.form {
+  @include no-list;
+  font: inherit;
+}
+
+.form__fieldset {
+  border: 0 none;
+}
+
+.form__legend {
+  font-size: 17px;
+  line-height: 16px;
+  color: $light-green;
+}
+
+.form__label {
+  font-size: 17px;
+  line-height: 18px;
+  color: $black;
+}
+
+.form__input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba($dark-grey, 0.3);
+}
+
+.form__note {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__send-button {
+  @include button($dark-grey, $white);
+
+  /* временно */
+  width: 260px;
+  height: 52px;
+
+  border: solid 2px $dark-grey;
+}
+
+.form__send-button:hover,
+.form__send-button:focus {
+  color: $white;
+  background-color: $dark-grey;
+}
+
+.form__send-button:active {
+  color: rgba($white, 0.3);
+  background-color: $dark-grey;
+}
