@@ -1,0 +1,53 @@
+.promo__title {
+  @include title(25px, 30px);
+}
+
+.promo__subtitle {
+  font-size: 17px;
+  line-height: 20px;
+  color: $light-green;
+  text-transform: uppercase;
+}
+
+.promo__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: $dark-grey;
+}
+
+.promo__row {
+  border-bottom: solid 1px $light-grey;
+}
+
+.promo__field,
+.promo__value {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.promo__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.promo__request-button {
+  @include button($dark-grey, $white);
+
+  /* временно */
+  width: 260px;
+  height: 52px;
+
+  border: solid 2px $dark-grey;
+}
+
+.promo__request-button:hover,
+.promo__request-button:focus {
+  color: $white;
+  background-color: $dark-grey;
+}
+
+.promo__request-button:active {
+  color: rgba($white, 0.3);
+  background-color: $dark-grey;
+}

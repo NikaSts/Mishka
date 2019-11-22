@@ -1,0 +1,42 @@
+.contacts__title {
+  @include title(18px, 30px);
+}
+
+.contacts__link {
+  color: $dark-grey;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: $light-green;
+}
+
+.contacts__link:active {
+  color: rgba($light-green, 0.3);
+}
+
+.contacts__text {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.contacts__feedback-button {
+  @include button($dark-grey, $white);
+
+  /* временно */
+  width: 260px;
+  height: 52px;
+
+  border: solid 2px $dark-grey;
+}
+
+.contacts__feedback-button:hover,
+.contacts__feedback-button:focus {
+  color: $white;
+  background-color: $dark-grey;
+}
+
+.contacts__feedback-button:active {
+  color: rgba($white, 0.3);
+  background-color: $dark-grey;
+}

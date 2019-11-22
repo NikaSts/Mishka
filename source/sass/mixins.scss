@@ -1,0 +1,23 @@
+@mixin no-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin title($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: bold;
+  color: $black;
+}
+
+@mixin button($font-color, $bg-color) {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: $font-color;
+  background-color: $bg-color;
+  text-transform: uppercase;
+  cursor: pointer;
+}

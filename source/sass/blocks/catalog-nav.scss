@@ -1,0 +1,27 @@
+.catalog-nav__list {
+  @include no-list;
+}
+
+.catalog-nav__link {
+  /* временно */
+  width: 320px;
+  height: 103px;
+
+  display: block;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $white;
+}
+
+.catalog-nav__link--home {
+  background-color: $light-green;
+}
+
+.catalog-nav__link--toys {
+  background-color: $medium-green;
+}
+
+.catalog-nav__link:active {
+  color: rgba($white, 0.3);
+}
