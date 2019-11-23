@@ -1,5 +1,6 @@
 .manufacture__title {
   @include title(17px, 24px);
+  background: url("../img/svg/icon-video.svg") no-repeat left;
 }
 
 .manufacture__text {
@@ -9,7 +10,6 @@
 
 .manufacture__order-button {
   @include button($dark-grey, $white);
-  display: block;
 
   /* временно */
   width: 192px;
