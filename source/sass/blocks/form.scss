@@ -53,6 +53,10 @@
   resize: none;
 }
 
+.form__input:active {
+  color: $dark-grey;
+}
+
 .form__note {
   font-size: 14px;
   line-height: 16px;
