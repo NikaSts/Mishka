@@ -2,8 +2,10 @@
   @include title(18px, 30px);
 }
 
+.contacts__text,
 .contacts__link {
-  color: $dark-grey;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .contacts__link:hover,
@@ -15,11 +17,6 @@
   color: rgba($light-green, 0.3);
 }
 
-.contacts__text {
-  font-size: 17px;
-  line-height: 30px;
-}
-
 .contacts__feedback-button {
   @include button($dark-grey, $white);
 
@@ -27,7 +24,7 @@
   width: 260px;
   height: 52px;
 
-  border: solid 2px $dark-grey;
+  border: 2px solid $dark-grey;
 }
 
 .contacts__feedback-button:hover,

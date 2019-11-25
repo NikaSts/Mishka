@@ -2,6 +2,27 @@
   @include title(25px, 30px);
 }
 
+.review__item {
+  margin: 0;
+}
+
+.review__text {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.review__author-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $black;
+}
+
+.review__author-id {
+  font-size: 17px;
+  line-height: 30px;
+}
+
 .review__write-button {
   @include button($dark-grey, $white);
 
@@ -9,7 +30,7 @@
   width: 260px;
   height: 52px;
 
-  border: solid 2px $dark-grey;
+  border: 2px solid $dark-grey;
 }
 
 .review__write-button:hover,
