@@ -5,13 +5,15 @@
   width: 320px;
   height: 177px;
 
+  margin: 0;
+  padding: 71px 30px;
   text-align: center;
   background-color: $light-grey;
 }
 
 .page-main__title--index {
   /* временно */
-  height: 270px;
+  height: 282px;
 
   color: #010000;
   background: url("../img/hero-mobile@1x.jpg") no-repeat center;
