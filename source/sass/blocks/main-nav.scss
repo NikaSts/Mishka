@@ -1,4 +1,17 @@
+.main-nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__logo {
+  display: block;
+  min-height: 79px;
+}
+
 .main-nav__open-button {
+  position: absolute;
+  right: 0;
   width: 79px;
   height: 79px;
   background-color: $white;

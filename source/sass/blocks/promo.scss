@@ -1,8 +1,15 @@
+.promo {
+  padding: 0 30px;
+}
+
 .promo__title {
   @include title(25px, 30px);
+  margin: 0;
+  padding-top: 28px;
 }
 
 .promo__subtitle {
+  margin: 0;
   font-size: 17px;
   line-height: 20px;
   color: $light-green;
