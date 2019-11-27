@@ -1,5 +1,5 @@
 .catalog-item__title {
-  @include title(17px, 24px);
+  margin: 0;  // временно
 }
 
 .catalog-item__description {

@@ -5,9 +5,3 @@
 
   background-color: $white;
 }
-
-.modal__title {
-  @include title(25px, 30px);
-  text-align: center;
-  text-transform: uppercase;
-}
