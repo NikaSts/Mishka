@@ -2,3 +2,24 @@
   box-shadow: 0 1px 0 0 $light-grey,
     inset 0 1px 0 0 $light-grey;
 }
+
+.page-header__nav {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    box-shadow: none;
+  }
+
+  .page-header__nav {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__nav {
+    width: $desktop-width;
+  }
+}

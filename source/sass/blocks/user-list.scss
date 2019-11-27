@@ -1,0 +1,56 @@
+.user-list {
+  @include no-list;
+}
+
+.user-list__item {
+  box-shadow:
+    0 1px 0 0 #ececec,
+    inset 0 1px 0 0 #ececec;
+}
+
+.user-list__link {
+  display: block;
+  padding: 26px 60px 26px 76px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $black;
+}
+
+.user-list__link:hover,
+.user-list__link:focus {
+  color: rgba($black, 0.6);
+}
+
+.user-list__link:active {
+  color: rgba($black, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    display: flex;
+    width: 400px; // времено для сетки
+  }
+
+  .user-list__link {
+    padding: 22px 50px;
+  }
+
+  .user-list__link--search {
+    width: 84px;
+    height: 100%;
+    padding: 0;
+    border-left: 1px solid $light-grey;
+    border-right: 1px solid $light-grey;
+  }
+
+  .user-list__link--cart {
+    // width: 316px;
+    padding: 31px 50px 33px 82px;
+    text-align: right;
+  }
+
+  .user-list__span {
+    visibility: hidden;
+  }
+}
