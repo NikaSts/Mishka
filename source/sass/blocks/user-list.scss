@@ -28,8 +28,8 @@
 
 @media (min-width: $tablet-width) {
   .user-list {
+    width: 400px;
     display: flex;
-    width: 400px; // времено для сетки
   }
 
   .user-list__link {
@@ -45,7 +45,6 @@
   }
 
   .user-list__link--cart {
-    // width: 316px;
     padding: 31px 50px 33px 82px;
     text-align: right;
   }
