@@ -1,5 +1,6 @@
 .catalog-nav__list {
   @include no-list;
+  background-color: transparent;
 }
 
 .catalog-nav__link {
@@ -25,4 +26,25 @@
 
 .catalog-nav__link:active {
   color: rgba($white, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-nav__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .catalog-nav__link {
+    width: 334px;
+    height: 119px;
+    padding: 27px 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-nav__link {
+    width: 525px;
+  }
 }

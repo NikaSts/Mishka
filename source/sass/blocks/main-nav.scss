@@ -38,6 +38,7 @@
   .main-nav__logo {
     width: 112px;
     height: 46px;
+    margin: 22px 205px 20px 51px;
   }
 
   .main-nav__list--user {
@@ -56,6 +57,10 @@
     display: block;
     order: 3;
     padding: 18px 50px 20px 50px;
+    background-color: $light-grey;
+  }
+
+  .main-nav__text--index {
     background-color: $very-light-grey;
   }
 }
@@ -64,7 +69,6 @@
   .main-nav__list--promo {
     display: block;
     order: 2;
-    background-color: $very-light-grey;
   }
 
   .main-nav__list--site {
@@ -74,8 +78,7 @@
   .main-nav__logo {
     width: 149px;
     height: 72px;
-    margin-left: 45px;
-    margin-right: 101px;
+    margin: 9px 101px 7px 45px;
     order: 1;
   }
 }
