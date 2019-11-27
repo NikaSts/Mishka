@@ -6,7 +6,8 @@
 
 .main-nav__logo {
   display: block;
-  min-height: 79px;
+  width: 86px;
+  height: 79px;
 }
 
 .main-nav__open-button {
@@ -16,5 +17,65 @@
   height: 79px;
   background-color: $white;
   border: 0 none;
+  outline: 1px solid red; // временно
   cursor: pointer;
+}
+
+.main-nav__text {
+  display: none;
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__logo {
+    width: 112px;
+    height: 46px;
+  }
+
+  .main-nav__list--user {
+    order: 1;
+  }
+
+  .main-nav__list--site {
+    order: 2;
+  }
+
+  .main-nav__open-button {
+    display: none;
+  }
+
+  .main-nav__text {
+    display: block;
+    order: 3;
+    padding: 18px 50px 20px 50px;
+    background-color: $very-light-grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list--promo {
+    display: block;
+    order: 2;
+    background-color: $very-light-grey;
+  }
+
+  .main-nav__list--site {
+    order: 0;
+  }
+
+  .main-nav__logo {
+    width: 149px;
+    height: 72px;
+    margin-left: 45px;
+    margin-right: 101px;
+    order: 1;
+  }
 }

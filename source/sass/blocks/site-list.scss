@@ -1,18 +1,15 @@
 .site-list {
   @include no-list;
-  display: none;    /*временно !!!!!!!!! */
 }
 
 .site-list__item {
+  padding: 26px 60px 26px 76px;
   box-shadow:
     0 1px 0 0 #ececec,
     inset 0 1px 0 0 #ececec;
 }
 
 .site-list__link {
-  display: block;
-  min-height: 79px;
-  padding: 26px 60px 26px 76px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -26,4 +23,31 @@
 
 .site-list__link:active {
   color: rgba($black, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    width: 455px; // времено для сетки
+    background-color: transparent;
+  }
+
+  .site-list__item {
+    padding: 22px 50px;
+    box-shadow: none;
+  }
+
+  .site-list__link {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    padding: 31px 20px 33px 50px;
+  }
+
+  .site-list__link {
+    font-size: 17px;
+  }
 }
