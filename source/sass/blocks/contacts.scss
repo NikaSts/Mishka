@@ -8,13 +8,18 @@
   line-height: 30px;
 }
 
+.contacts__link {
+  color: $dark-grey;
+  border-bottom: 1px solid #46c1ae;
+}
+
 .contacts__link:hover,
 .contacts__link:focus {
-  color: $light-green;
+  color: #46c1ae;
 }
 
 .contacts__link:active {
-  color: rgba($light-green, 0.3);
+  color: rgba(#46c1ae, 0.3);
 }
 
 .contacts__feedback-button {
