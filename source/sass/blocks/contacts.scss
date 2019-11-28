@@ -2,22 +2,25 @@
   @include title(18px, 30px);
 }
 
+.contacts__text,
+.contacts__link {
+  font-size: 15px;
+  line-height: 30px;
+}
+
 .contacts__link {
   color: $dark-grey;
+  border-bottom: 1px solid #46c1ae;
 }
 
 .contacts__link:hover,
 .contacts__link:focus {
-  color: $light-green;
+  color: #46c1ae;
 }
 
 .contacts__link:active {
-  color: rgba($light-green, 0.3);
-}
-
-.contacts__text {
-  font-size: 17px;
-  line-height: 30px;
+  color: rgba(70, 193, 174, 0.3);
+  border-bottom: 1px solid rgba(70, 193, 174, 0.3);
 }
 
 .contacts__feedback-button {
@@ -27,7 +30,7 @@
   width: 260px;
   height: 52px;
 
-  border: solid 2px $dark-grey;
+  border: 2px solid $dark-grey;
 }
 
 .contacts__feedback-button:hover,
