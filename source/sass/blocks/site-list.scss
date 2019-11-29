@@ -1,5 +1,6 @@
 .site-list {
   @include no-list;
+  display: none;  // временно
 }
 
 .site-list__item {

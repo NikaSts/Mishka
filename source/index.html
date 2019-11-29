@@ -18,33 +18,35 @@
           alt="Логотип магазина Мишка">
       </a>
       <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list main-nav__list--site site-list site-list--index">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
+      <ul class="main-nav__list main-nav__list--site site-list site-list--index">
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
       <ul class="main-nav__list main-nav__list--user user-list">
         <li class="user-list__item">
-          <a class="user-list__link user-list__link--search" href="#"><span class="user-list__span">Поиск по сайту</span></a>
+          <a class="user-list__link user-list__link--search" href="#"><span class="user-list__span">Поиск по
+              сайту</span></a>
         </li>
         <li class="user-list__item">
           <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
-        <ul class="main-nav__list main-nav__list--promo promo-list promo-list--index">
-          <li class="promo-list__item"><a class="promo-list__link" href="#">Новые поступления</a></li>
-          <li class="promo-list__item"><a class="promo-list__link" href="#">Распродажа</a></li>
-        </ul>
-        <p class="main-nav__text main-nav__text--index">Бесплатная доставка по России</p>
+      <ul class="main-nav__list main-nav__list--promo promo-list promo-list--index">
+        <li class="promo-list__item"><a class="promo-list__link" href="#">Новые поступления</a></li>
+        <li class="promo-list__item"><a class="promo-list__link" href="#">Распродажа</a></li>
+      </ul>
+      <p class="main-nav__text main-nav__text--index">Бесплатная доставка по России</p>
     </nav>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Магазин игрушек и аксессуаров ручной работы Мишка</h1>
-    <p class="page-main__title page-main__title--index title title__big title__big--main title__big--another-color">Милые штуки ручной работы&nbsp;для&nbsp;дома</p>
+    <p class="page-main__title page-main__title--index title title__big title__big--main title__big--another-color">
+      Милые штуки ручной работы&nbsp;для&nbsp;дома</p>
     <section class="catalog-nav" aria-labelledby="our-catalog">
       <h2 class="visually-hidden" id="our-catalog">Каталог магазина</h2>
       <ul class="catalog-nav__list">
@@ -57,38 +59,43 @@
       </ul>
     </section>
     <section class="promo" aria-labelledby="week-promo">
-      <p class="promo__title title title__big">Вязаные корзинки</p>
       <h2 class="promo__subtitle" id="week-promo">Товар недели</h2>
-      <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех
-        размерах.</p>
-      <table class="promo__table">
-        <tr class="promo__row">
-          <td class="promo__field">Цвет:</td>
-          <td class="promo__value">«Тиффани»/серый</td>
-        </tr>
-        <tr class="promo__row">
-          <td class="promo__field">Диаметр:</td>
-          <td class="promo__value">25 см</td>
-        </tr>
-        <tr class="promo__row">
-          <td class="promo__field">Высота:</td>
-          <td class="promo__value">15 см</td>
-        </tr>
-      </table>
+      <p class="promo__title title title__big">Вязаные корзинки</p>
+      <div class="promo__description-wrapper">
+        <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех
+          размерах.</p>
+        <table class="promo__table">
+          <tr class="promo__row">
+            <td class="promo__field">Цвет:</td>
+            <td class="promo__value">«Тиффани»/серый</td>
+          </tr>
+          <tr class="promo__row">
+            <td class="promo__field">Диаметр:</td>
+            <td class="promo__value">25 см</td>
+          </tr>
+          <tr class="promo__row">
+            <td class="promo__field">Высота:</td>
+            <td class="promo__value">15 см</td>
+          </tr>
+        </table>
+      </div>
       <img class="promo__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
         alt="Разноцветные корзинки крупной вязки">
-      <p class="promo__price">Цена: 990 руб.</p>
-      <button class="promo__request-button" type="button">Заказать</button>
+      <div class="promo__button-wrapper">
+        <p class="promo__price">Цена: 990 руб.</p>
+        <button class="promo__request-button" type="button">Заказать</button>
+      </div>
     </section>
     <section class="about-us" aria-labelledby="info-about-us">
       <h2 class="about-us__title title title__big" id="info-about-us">Коротко о нас:</h2>
       <ul class="about-us__list">
-        <li class="about-us__item about-us__item--eco-materials">Экологически чистые материалы</li>
-        <li class="about-us__item about-us__item--scandinavian-style">Скандинавский стиль по российской цене</li>
-        <li class="about-us__item about-us__item--like-increaser">Увеличивает лайки на фотографиях</li>
-        <li class="about-us__item about-us__item--handmade">Связано вручную с любовью и умилением</li>
-        <li class="about-us__item about-us__item--domestic-producer">Поддержка отечественного производителя</li>
-        <li class="about-us__item about-us__item--gift-box">Поставляется в подарочной упаковке</li>
+        <li class="about-us__item about-us__item--eco-materials">Экологически чистые&nbsp;материалы</li>
+        <li class="about-us__item about-us__item--scandinavian-style">Скандинавский стиль по&nbsp;российской&nbsp;цене
+        </li>
+        <li class="about-us__item about-us__item--like-increaser">Увеличивает лайки на&nbsp;фотографиях</li>
+        <li class="about-us__item about-us__item--handmade">Связано вручную с любовью&nbsp;и&nbsp;умилением</li>
+        <li class="about-us__item about-us__item--domestic-producer">Поддержка&nbsp;отечественного производителя</li>
+        <li class="about-us__item about-us__item--gift-box">Поставляется в подарочной&nbsp;упаковке</li>
       </ul>
     </section>
     <section class="review" aria-labelledby="clients-review">

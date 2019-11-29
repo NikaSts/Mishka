@@ -1,12 +1,21 @@
+.about-us {
+  padding: 32px 30px;
+}
+
 .about-us__title {
-  margin: 0;  // временно
+  margin: 0; // временно
 }
 
 .about-us__list {
   @include no-list;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-us__item {
+  display: block;
+  width: 270px;
+  padding-top: 83px;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
@@ -35,4 +44,27 @@
 
 .about-us__item--gift-box {
   background: url("../img/svg/icon-feature-gift.svg") no-repeat left;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding: 56px 50px 84px 50px;
+  }
+
+  .about-us__list {
+    display: block;
+    margin-top: -8px;
+    column-count: 2;
+    column-gap: 1px;
+  }
+
+  .about-us__item {
+    padding-top: 111px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  
 }

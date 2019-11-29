@@ -1,14 +1,18 @@
 .promo {
-  padding: 0 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 27px 30px 37px 30px;
 }
 
 .promo__title {
   margin: 0;
-  padding-top: 28px;
+  order: -1;
 }
 
 .promo__subtitle {
   margin: 0;
+  margin-top: 4px;
   font-size: 17px;
   line-height: 20px;
   color: $light-green;
@@ -16,9 +20,15 @@
 }
 
 .promo__description {
+  margin-top: 24px;
   font-size: 15px;
   line-height: 24px;
   color: $dark-grey;
+}
+
+.promo__table {
+  margin-top: 18px;
+  border-collapse: collapse;
 }
 
 .promo__row {
@@ -27,23 +37,31 @@
 
 .promo__field,
 .promo__value {
+  padding: 9px 30px 10px 0;
   font-size: 15px;
   line-height: 20px;
 }
 
+.promo__image {
+  margin-top: 29px;
+}
+
 .promo__price {
+  margin: 0;
+  margin-top: 23px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  text-align: center;
 }
 
 .promo__request-button {
   @include button($dark-grey, $white);
 
-  /* временно */
   width: 260px;
-  height: 52px;
-
+  /* временно */
+  margin-top: 26px;
+  padding: 15px 30px;
   border: 2px solid $dark-grey;
 }
 
@@ -56,4 +74,48 @@
 .promo__request-button:active {
   color: rgba($white, 0.3);
   background-color: $dark-grey;
+}
+
+/*далее все временное*/
+@media (min-width: $tablet-width) {
+  .promo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 617px;
+  }
+
+  .promo__subtitle {
+    width: 80px;
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  .promo__description-wrapper {
+    width: 335px;
+  }
+
+  .promo__button-wrapper {
+    margin-top: -150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    height: 817px;
+    padding: 120px 50px 20px 220px;
+    outline: 1px solid red;
+  }
+
+  .promo__title {
+    width: 100%;
+  }
+
+  .promo__subtitle {
+    position: absolute;
+    left: 100px;
+  }
+
+  .promo__description-wrapper {
+    width: 500px;
+  }
 }
