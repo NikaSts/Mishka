@@ -1,3 +1,5 @@
 .social-list {
   @include no-list;
+  display: flex;
+  justify-content: space-between;
 }

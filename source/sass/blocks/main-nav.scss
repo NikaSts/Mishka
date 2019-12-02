@@ -4,7 +4,7 @@
   flex-direction: column;
 }
 
-.main-nav__logo {
+.main-nav__logo-link {
   display: block;
   width: 86px;
   height: 79px;
@@ -35,7 +35,7 @@
     flex-wrap: wrap;
   }
 
-  .main-nav__logo {
+  .main-nav__logo-link {
     width: 112px;
     height: 46px;
     margin: 22px 205px 20px 51px;
@@ -75,7 +75,7 @@
     order: 0;
   }
 
-  .main-nav__logo {
+  .main-nav__logo-link {
     width: 149px;
     height: 72px;
     margin: 9px 101px 7px 45px;
