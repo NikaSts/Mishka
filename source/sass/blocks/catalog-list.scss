@@ -1,3 +1,19 @@
-.catalog__list {
+.catalog-list {
   @include no-list;
+  padding: 30px;
+  outline: 1px solid blue;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-list {
+    padding: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

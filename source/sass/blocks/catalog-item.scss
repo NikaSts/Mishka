@@ -1,15 +1,66 @@
+.catalog-item {
+  width: 260px;
+  outline: 1px solid red;
+}
+
+.catalog-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.catalog-item__image-link {
+  display: block;
+  height: 195px;
+}
+
+.catalog-item__title-link {
+  display: block;
+}
+
+.catalog-item__info-wrapper {
+  padding: 24px 27px 27px 27px;
+}
+
 .catalog-item__title {
-  margin: 0;  // временно
+  margin: 0;
 }
 
 .catalog-item__description {
+  margin: 6px 0 19px 0;
   font-size: 13px;
   line-height: 30px;
 }
 
+.catalog-item__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 21px;
+  border-top: 1px solid $very-light-grey;
+}
+
 .catalog-item__price {
+  margin: 0;
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
   color: $black;
+}
+
+.catalog-item__cart-button {
+  outline: 1px solid red;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    display: flex;
+    width: 668px;
+    min-height: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-item {
+    display: block;
+    width: 316px;
+  }
 }
