@@ -2,6 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
   padding: 27px 30px 37px 30px;
 }
 
@@ -76,12 +78,13 @@
   background-color: $dark-grey;
 }
 
-/*далее все временное*/
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {   // есть перестроение, но пока без ПП
   .promo {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 617px;
+    width: $tablet-width;
+    min-height: 617px;
+    padding: 27px 50px 37px 50px;
   }
 
   .promo__subtitle {
@@ -114,7 +117,8 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    height: 817px;
+    width: $desktop-width;
+    min-height: 817px;
     padding: 120px 50px 20px 220px;
     outline: 1px solid red;
   }

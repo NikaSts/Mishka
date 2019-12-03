@@ -4,11 +4,10 @@
 }
 
 .catalog-nav__link {
-  /* временно */
+  display: block;
   width: 320px;
   height: 103px;
-
-  display: block;
+  margin: 0 auto;
   padding: 25px 30px;
   font-size: 19px;
   line-height: 24px;

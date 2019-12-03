@@ -19,6 +19,7 @@
 @media (min-width: $desktop-width) {
   .promo-list {
     display: flex;
+    flex-wrap: wrap;
     width: 818px;
     background-color: $light-grey;
   }

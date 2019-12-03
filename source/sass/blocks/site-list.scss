@@ -1,6 +1,6 @@
 .site-list {
   @include no-list;
-  display: none;  // временно
+  display: none; // временно
 }
 
 .site-list__item {
@@ -29,7 +29,8 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
-    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 437px;
     padding: 0 33px;
     background-color: $light-grey;
   }
@@ -50,6 +51,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
+    width: 455px;
     padding: 0;
     background-color: $white;
   }
