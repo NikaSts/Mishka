@@ -6,14 +6,32 @@
   display: none;
 }
 
+.page-footer__social-list {
+  margin: 0 auto;
+}
+
+.page-footer__copyright {
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: $tablet-width;
-    min-height: 143px; // временно
+    min-height: 143px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 50px;
+  }
+
+  .page-footer__copyright,
+  .page-footer__social-list {
+    margin: 0;
+  }
+
+  .page-footer__social-list {
+    margin-left: 72px;
   }
 
   .page-footer__logo-link {
