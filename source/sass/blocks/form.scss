@@ -1,6 +1,8 @@
 .form {
-  @include no-list;
+  width: 320px;
+  padding: 0 30px 23px 30px;
   font: inherit;
+  color: $dark-grey;
 }
 
 .form__fieldset {
@@ -9,7 +11,26 @@
   border: 0 none;
 }
 
+.form__fieldset--product-type {
+  margin-bottom: 43px;
+}
+
+.form__fieldset--product-color {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 376px;
+  margin-bottom: 42px;
+}
+
+.form__fieldset--name,
+.form__fieldset--phone,
+.form__fieldset--email {
+  margin-bottom: 9px;
+}
+
 .form__legend {
+  display: block;
   margin: 0;
   padding: 0;
   font-size: 17px;
@@ -20,14 +41,56 @@
   border: 0 none;
 }
 
+.form__fieldset--product-type .form__legend {
+  margin-bottom: 34px;
+}
+
+.form__fieldset--product-color .form__legend {
+  margin-bottom: 37px;
+}
+
+.form__fieldset--name .form__legend {
+  margin-bottom: 29px;
+}
+
+.form__fieldset--phone .form__legend,
+.form__fieldset--email .form__legend {
+  margin-bottom: 8px;
+}
+
+.form__fieldset--message .form__legend {
+  margin-bottom: 25px;
+}
+
 .form__label {
+  display: block;
   font-size: 17px;
   line-height: 18px;
   color: $black;
   font-weight: bold;
 }
 
+.form__fieldset--product-type .form__label,
+.form__fieldset--product-color .form__label {
+  margin-left: 62px;
+}
+
+.form__fieldset--product-type .form__label:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form__fieldset--product-color .form__label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .form__input {
+  width: 260px;
+  height: 51px;
+  margin-bottom: 23px;
+  padding: 15px 0;
+  font-size: 17px;
+  line-height: 18px;
+  color: $dark-grey;
   border: 0 none;
   box-shadow: inset 0 -2px 0 0 $black;
 }
@@ -46,29 +109,27 @@
 
 .form__textarea {
   height: 142px;
+  width: 260px;
   margin: 0;
-  padding: 0;
+  padding: 13px 14px;
+  font-size: 17px;
+  line-height: 18px;
   border: 2px solid $dark-grey;
   overflow: auto;
   resize: none;
 }
 
-.form__input:active {
-  color: $dark-grey;
-}
-
 .form__note {
+  margin: 15px 0;
   font-size: 14px;
   line-height: 16px;
 }
 
 .form__send-button {
   @include button($dark-grey, $white);
-
-  /* временно */
   width: 260px;
   height: 52px;
-
+  margin: 32px 0;
   border: 2px solid $dark-grey;
 }
 
@@ -81,4 +142,21 @@
 .form__send-button:active {
   color: rgba($white, 0.3);
   background-color: $dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    min-width: $tablet-width;
+  }
+
+  .form__fieldset-wrapper {
+    background-color: $light-grey;
+  }
+
+  .form__fieldset--product-color {
+    // display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    margin: 0 auto;
+  }
 }
