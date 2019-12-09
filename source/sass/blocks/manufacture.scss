@@ -1,5 +1,13 @@
 .manufacture__title {
   margin: 0;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
   background: url("../img/svg/icon-video.svg") no-repeat left;
 }
 
@@ -10,21 +18,18 @@
 
 .manufacture__order-button {
   @include button($dark-grey, $white);
-
-  /* временно */
   width: 192px;
-  height: 52px;
-
+  min-height: 52px;
   border: 2px solid $dark-grey;
-}
 
-.manufacture__order-button:hover,
-.manufacture__order-button:focus {
-  color: $white;
-  background-color: $dark-grey;
-}
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $dark-grey;
+  }
 
-.manufacture__order-button:active {
-  color: rgba($white, 0.3);
-  background-color: $dark-grey;
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $dark-grey;
+  }
 }

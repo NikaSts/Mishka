@@ -1,32 +1,36 @@
 .form {
   width: 320px;
-  padding: 0 30px 23px 30px;
+  padding-bottom: 23px;
   font: inherit;
   color: $dark-grey;
 }
 
 .form__fieldset {
-  margin: 0;
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
   padding: 0;
   border: 0 none;
-}
 
-.form__fieldset--product-type {
-  margin-bottom: 43px;
-}
+  &--product-type,
+  &--product-color {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 128px;
+    margin-bottom: 43px;
+  }
 
-.form__fieldset--product-color {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 376px;
-  margin-bottom: 42px;
-}
+  &--product-color {
+    min-height: 376px;
+    margin-bottom: 42px;
+  }
 
-.form__fieldset--name,
-.form__fieldset--phone,
-.form__fieldset--email {
-  margin-bottom: 9px;
+  &--name,
+  &--phone,
+  &--email {
+    margin-bottom: 9px;
+  }
 }
 
 .form__legend {
@@ -75,14 +79,6 @@
   margin-left: 62px;
 }
 
-.form__fieldset--product-type .form__label:not(:last-child) {
-  margin-bottom: 24px;
-}
-
-.form__fieldset--product-color .form__label:not(:last-child) {
-  margin-bottom: 20px;
-}
-
 .form__input {
   width: 260px;
   height: 51px;
@@ -93,18 +89,16 @@
   color: $dark-grey;
   border: 0 none;
   box-shadow: inset 0 -2px 0 0 $black;
-}
 
-.form__input:active,
-.form__textarea:active {
-  color: $dark-grey;
-}
+  &:active {
+    color: $dark-grey;
+  }
 
-.form__input::placeholder,
-.form__textarea::placeholder {
-  font-size: 17px;
-  line-height: 18px;
-  color: rgba($dark-grey, 0.3);
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba($dark-grey, 0.3);
+  }
 }
 
 .form__textarea {
@@ -117,6 +111,21 @@
   border: 2px solid $dark-grey;
   overflow: auto;
   resize: none;
+
+  &:active {
+    color: $dark-grey;
+  }
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba($dark-grey, 0.3);
+  }
+}
+
+.form__button-wrapper {
+  width: 260px;
+  margin: 0 auto;
 }
 
 .form__note {
@@ -131,32 +140,86 @@
   height: 52px;
   margin: 32px 0;
   border: 2px solid $dark-grey;
-}
 
-.form__send-button:hover,
-.form__send-button:focus {
-  color: $white;
-  background-color: $dark-grey;
-}
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $dark-grey;
+  }
 
-.form__send-button:active {
-  color: rgba($white, 0.3);
-  background-color: $dark-grey;
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $dark-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .form {
-    min-width: $tablet-width;
+    width: 100%;
   }
 
   .form__fieldset-wrapper {
+    padding: 50px 0;
     background-color: $light-grey;
   }
 
-  .form__fieldset--product-color {
-    // display: flex;
-    flex-wrap: wrap;
-    width: 768px;
-    margin: 0 auto;
+  .form__fieldset {
+    width: $tablet-width - 100px;
+    padding-left: 186px;
+
+
+    &--product-type {
+      min-height: 94px;
+      margin-top: 65px;
+      margin-bottom: 68px;
+    }
+
+    &--product-color {
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-height: 304px;
+      margin-bottom: 0;
+    }
+
+    &--phone,
+    &--email {
+      min-height: 64px;
+      margin-bottom: 0;
+    }
+
+    &--product-color .form__label {
+      width: 240px;
+      margin: 0;
+    }
+
+    &--phone .form__input,
+    &--email .form__input {
+      background-color: $light-grey;
+    }
+  }
+
+  .form__legend {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .form__label {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: $tablet-width - 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__button-wrapper {
+    width: 700px;
   }
 }

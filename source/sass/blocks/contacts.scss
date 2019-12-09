@@ -1,5 +1,19 @@
 .contacts__title {
-  margin: 0;  // временно
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .contacts__text,
@@ -11,35 +25,32 @@
 .contacts__link {
   color: $dark-grey;
   border-bottom: 1px solid #46c1ae;
-}
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: #46c1ae;
-}
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
 
-.contacts__link:active {
-  color: rgba(#46c1ae, 0.3);
-  border-bottom: 1px solid rgba(#46c1ae, 0.3);
+  &:active {
+    color: rgba(#46c1ae, 0.3);
+    border-bottom: 1px solid rgba(#46c1ae, 0.3);
+  }
 }
 
 .contacts__feedback-button {
   @include button($dark-grey, $white);
-
-  /* временно */
   width: 260px;
-  height: 52px;
-
+  min-height: 52px;
   border: 2px solid $dark-grey;
-}
 
-.contacts__feedback-button:hover,
-.contacts__feedback-button:focus {
-  color: $white;
-  background-color: $dark-grey;
-}
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $dark-grey;
+  }
 
-.contacts__feedback-button:active {
-  color: rgba($white, 0.3);
-  background-color: $dark-grey;
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $dark-grey;
+  }
 }

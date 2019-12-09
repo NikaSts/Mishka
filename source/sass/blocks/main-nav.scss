@@ -1,24 +1,41 @@
 .main-nav {
-  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .main-nav__logo-link {
   display: block;
   width: 86px;
   height: 79px;
+
+  @media (min-width: $tablet-width) {
+    // временное решение, после добавления графики будут изменения
+    width: 112px;
+    height: 46px;
+    margin: 22px 205px 20px 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+    margin: 9px 101px 7px 45px;
+    order: 1;
+  }
 }
 
 .main-nav__open-button {
-  position: absolute;
-  right: 0;
   width: 79px;
   height: 79px;
+  margin-left: auto;
   background-color: $white;
   border: 0 none;
   outline: 1px solid red; // временно
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__text {
@@ -27,59 +44,41 @@
   font-size: 15px;
   line-height: 24px;
   text-align: right;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .main-nav__logo-link {
-    width: 112px;
-    height: 46px;
-    margin: 22px 205px 20px 51px;
-  }
-
-  .main-nav__list--user {
-    order: 1;
-  }
-
-  .main-nav__list--site {
-    order: 2;
-  }
-
-  .main-nav__open-button {
-    display: none;
-  }
-
-  .main-nav__text {
+  @media (min-width: $tablet-width) {
     position: relative;
     display: block;
     order: 3;
     padding: 18px 50px 20px 50px;
     background-color: $light-grey;
-  }
 
-  .main-nav__text--index {
-    background-color: $very-light-grey;
+    &--index {
+      background-color: $very-light-grey;
+    }
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav__list--promo {
-    display: block;
-    order: 2;
+.main-nav__list {
+  &--user {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
   }
 
-  .main-nav__list--site {
-    order: 0;
+  &--site {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      order: 0;
+    }
   }
 
-  .main-nav__logo-link {
-    width: 149px;
-    height: 72px;
-    margin: 9px 101px 7px 45px;
-    order: 1;
+  &--promo {
+    @media (min-width: $desktop-width) {
+      display: block;
+      order: 2;
+    }
   }
 }

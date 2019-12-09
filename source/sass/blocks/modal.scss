@@ -5,3 +5,17 @@
 
   background-color: $white;
 }
+
+.modal__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+  }
+}

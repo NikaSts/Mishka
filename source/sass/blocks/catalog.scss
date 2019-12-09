@@ -1,3 +1,19 @@
-.catalog {
-  background-color: $white;
+.catalog__list {
+  @include no-list;
+  width: 320px;
+  margin: 0 auto;
+  padding: 30px;
+  outline: 1px solid blue;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: $desktop-width;
+  }
 }

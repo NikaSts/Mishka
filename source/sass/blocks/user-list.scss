@@ -1,6 +1,12 @@
 .user-list {
   @include no-list;
-  display: none; // временно
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .user-list__item {
@@ -16,41 +22,39 @@
   line-height: 24px;
   font-weight: bold;
   color: $black;
-}
 
-.user-list__link:hover,
-.user-list__link:focus {
-  color: rgba($black, 0.6);
-}
-
-.user-list__link:active {
-  color: rgba($black, 0.3);
-}
-
-@media (min-width: $tablet-width) {
-  .user-list {
-    width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .user-list__link {
+  @media (min-width: $tablet-width) {
     padding: 22px 50px;
   }
 
-  .user-list__link--search {
-    width: 84px;
-    height: 88px;
-    padding: 0;
-    border: 1px solid $light-grey;
+  &:hover,
+  &:focus {
+    color: rgba($black, 0.6);
   }
 
-  .user-list__link--cart {
-    padding: 31px 50px 33px 82px;
-    text-align: right;
+  &:active {
+    color: rgba($black, 0.3);
   }
 
-  .user-list__span {
+  &--search {
+    @media (min-width: $tablet-width) {
+      width: 84px;
+      height: 88px;
+      padding: 0;
+      border: 1px solid $light-grey;
+    }
+  }
+
+  &--cart {
+    @media (min-width: $tablet-width) {
+      padding: 31px 50px 33px 82px;
+      text-align: right;
+    }
+  }
+}
+
+.user-list__span {
+  @media (min-width: $tablet-width) {
     visibility: hidden;
   }
 }
