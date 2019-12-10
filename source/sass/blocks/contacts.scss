@@ -24,16 +24,16 @@
 
 .contacts__link {
   color: $dark-grey;
-  border-bottom: 1px solid #46c1ae;
+  border-bottom: 1px solid $medium-green2;
 
   &:hover,
   &:focus {
-    color: #46c1ae;
+    color: $medium-green2;
   }
 
   &:active {
-    color: rgba(#46c1ae, 0.3);
-    border-bottom: 1px solid rgba(#46c1ae, 0.3);
+    color: rgba($medium-green2, 0.3);
+    border-bottom: 1px solid rgba($medium-green2, 0.3);
   }
 }
 

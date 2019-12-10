@@ -3,11 +3,10 @@
   width: 320px;
   margin: 0 auto;
   padding: 30px;
-  outline: 1px solid blue;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    padding: 50px;
+    padding: 67px 50px 53px 50px;
   }
 
   @media (min-width: $desktop-width) {

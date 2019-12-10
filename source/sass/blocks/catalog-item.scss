@@ -1,6 +1,6 @@
 .catalog-item {
   width: 260px;
-  outline: 1px solid red;
+  border: 1px solid $light-grey2;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -15,6 +15,10 @@
 
   &:not(:last-child) {
     margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
   }
 }
 
@@ -53,7 +57,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 21px;
-  border-top: 1px solid $very-light-grey;
+  border-top: 1px solid $light-grey2;
 }
 
 .catalog-item__price {
