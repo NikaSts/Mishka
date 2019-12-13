@@ -11,8 +11,8 @@
 
 .user-list__item {
   box-shadow:
-    0 1px 0 0 #ececec,
-    inset 0 1px 0 0 #ececec;
+    0 1px 0 0 $light-gray,
+    inset 0 1px 0 0 $light-gray;
 }
 
 .user-list__link {
@@ -41,7 +41,7 @@
       width: 84px;
       height: 88px;
       padding: 0;
-      border: 1px solid $light-grey;
+      border: 1px solid $white-smoke;
     }
   }
 

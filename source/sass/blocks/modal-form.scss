@@ -14,7 +14,7 @@
   font-size: 15px;
   line-height: 30px;
   text-align: center;
-  color: $dark-grey;
+  color: $charcoal;
 }
 
 .modal-form__label {
@@ -22,22 +22,22 @@
   line-height: 16px;
   font-weight: bold;
   text-align: center;
-  color: $dark-grey;
+  color: $charcoal;
 }
 
 .modal-form__add-button {
-  @include button($white, $light-green);
+  @include button($white, $green-cyan);
   width: 260px;
   min-height: 52px;
   border: 0 none;
 
   &:hover,
   &:focus {
-    background-color: $medium-green;
+    background-color: $light-green;
   }
 
   &:active {
     color: rgba($white, 0.3);
-    background-color: $medium-green;
+    background-color: $light-green;
   }
 }

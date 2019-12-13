@@ -1,5 +1,5 @@
 .review {
-  width: 320px;
+  width: $mobile-width;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
@@ -54,20 +54,20 @@
 }
 
 .review__write-button {
-  @include button($dark-grey, $white);
+  @include button($charcoal, $white);
 
   width: 260px;
   min-height: 52px;
-  border: 2px solid $dark-grey;
+  border: 2px solid $charcoal;
 
   &:hover,
   &:focus {
     color: $white;
-    background-color: $dark-grey;
+    background-color: $charcoal;
   }
 
   &:active {
     color: rgba($white, 0.3);
-    background-color: $dark-grey;
+    background-color: $charcoal;
   }
 }

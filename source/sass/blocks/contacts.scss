@@ -23,34 +23,34 @@
 }
 
 .contacts__link {
-  color: $dark-grey;
-  border-bottom: 1px solid $medium-green2;
+  color: $charcoal;
+  border-bottom: 1px solid $medium-green;
 
   &:hover,
   &:focus {
-    color: $medium-green2;
+    color: $medium-green;
   }
 
   &:active {
-    color: rgba($medium-green2, 0.3);
-    border-bottom: 1px solid rgba($medium-green2, 0.3);
+    color: rgba($medium-green, 0.3);
+    border-bottom: 1px solid rgba($medium-green, 0.3);
   }
 }
 
 .contacts__feedback-button {
-  @include button($dark-grey, $white);
+  @include button($charcoal, $white);
   width: 260px;
   min-height: 52px;
-  border: 2px solid $dark-grey;
+  border: 2px solid $charcoal;
 
   &:hover,
   &:focus {
     color: $white;
-    background-color: $dark-grey;
+    background-color: $charcoal;
   }
 
   &:active {
     color: rgba($white, 0.3);
-    background-color: $dark-grey;
+    background-color: $charcoal;
   }
 }

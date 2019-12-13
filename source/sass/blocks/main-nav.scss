@@ -50,10 +50,12 @@
     display: block;
     order: 3;
     padding: 18px 50px 20px 50px;
-    background-color: $light-grey;
+    background-color: $white-smoke;
+  }
 
-    &--index {
-      background-color: $very-light-grey;
+  &--index {
+    @media (min-width: $tablet-width) {
+      background-color: $snow;
     }
   }
 }

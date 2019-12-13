@@ -1,6 +1,6 @@
 .manufacture {
-  width: 260px;
-  border: 1px solid $light-grey2;
+  width: $mobile-width - 60px;
+  border: 1px solid $light-gray;
 }
 
 .manufacture__title {
@@ -22,19 +22,19 @@
 }
 
 .manufacture__order-button {
-  @include button($dark-grey, $white);
+  @include button($charcoal, $white);
   width: 192px;
   min-height: 52px;
-  border: 2px solid $dark-grey;
+  border: 2px solid $charcoal;
 
   &:hover,
   &:focus {
     color: $white;
-    background-color: $dark-grey;
+    background-color: $charcoal;
   }
 
   &:active {
     color: rgba($white, 0.3);
-    background-color: $dark-grey;
+    background-color: $charcoal;
   }
 }

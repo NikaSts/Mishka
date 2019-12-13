@@ -1,8 +1,6 @@
 .modal {
-  /* временно */
-  width: 320px;
+  width: $mobile-width;
   height: 336px;
-
   background-color: $white;
 }
 

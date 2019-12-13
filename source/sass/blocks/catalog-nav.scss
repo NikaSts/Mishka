@@ -10,10 +10,10 @@
 
 .catalog-nav__link {
   display: block;
-  width: 320px;
+  width: $mobile-width;
   height: 103px;
   margin: 0 auto;
-  padding: 25px 30px;
+  padding: 25px 130px 25px 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
@@ -22,21 +22,22 @@
   @media (min-width: $tablet-width) {
     width: 334px;
     height: 119px;
-    padding: 27px 36px;
+    padding: 27px 150px 27px 36px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 525px;
+    padding: 27px 350px 27px 36px;
   }
 
   &--home {
-    background-color: $light-green;
+    background-color: $green-cyan;
   }
 
   &--toys {
-    background-color: $medium-green;
+    background-color: $light-green;
   }
 
   &:active {

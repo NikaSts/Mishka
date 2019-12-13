@@ -7,11 +7,7 @@
     flex-wrap: wrap;
     width: 437px;
     padding: 0 33px;
-    background-color: $light-grey;
-
-    &--index {
-      background-color: $very-light-grey;
-    }
+    background-color: $white-smoke;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,13 +15,19 @@
     padding: 0;
     background-color: $white;
   }
+
+  &--index {
+    @media (min-width: $tablet-width) {
+      background-color: $snow;
+    }
+  }
 }
 
 .site-list__item {
   padding: 26px 60px 26px 76px;
   box-shadow:
-    0 1px 0 0 #ececec,
-    inset 0 1px 0 0 #ececec;
+    0 1px 0 0 $light-gray,
+    inset 0 1px 0 0 $light-gray;
 
   @media (min-width: $tablet-width) {
     padding: 18px 18px;

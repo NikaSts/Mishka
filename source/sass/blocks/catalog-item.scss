@@ -1,6 +1,6 @@
 .catalog-item {
-  width: 260px;
-  border: 1px solid $light-grey2;
+  width: $mobile-width - 60px;
+  border: 1px solid $light-gray;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -57,7 +57,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 21px;
-  border-top: 1px solid $light-grey2;
+  border-top: 1px solid $light-gray;
 }
 
 .catalog-item__price {

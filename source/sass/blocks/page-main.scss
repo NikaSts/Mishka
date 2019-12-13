@@ -1,7 +1,7 @@
 .page-main__title-wrapper {
   height: 177px;
   padding: 71px 30px;
-  background-color: $light-grey;
+  background-color: $white-smoke;
 
   @media (min-width: $tablet-width) {
     min-height: 226px;
@@ -16,15 +16,9 @@
   &--index {
     min-height: 283px;
     background: url("../img/hero-mobile@1x.jpg") no-repeat center;
-    background-color: $very-light-grey;
+    background-color: $snow;
 
     @media (min-width: $tablet-width) {
-      min-height: 746px;
-      margin-bottom: -119px;
-    }
-
-    @media (min-width: $desktop-width) {
-      // почему-то теряются свойства без этого дублирования кода...
       min-height: 746px;
       margin-bottom: -119px;
     }
@@ -33,6 +27,7 @@
 
 .page-main__title {
   display: block;
+  width: $mobile-width - 60px;
   margin: 0 auto;
   font-size: 27px;
   line-height: 30px;
@@ -42,6 +37,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
+    width: 560px;
     line-height: 50px;
   }
 
@@ -62,7 +58,7 @@
 
 .page-main__text {
   &--form {
-    width: 260px;
+    width: $mobile-width - 60px;
     margin: 0 auto;
     padding: 22px 0 24px 0;
     font-size: 13px;
