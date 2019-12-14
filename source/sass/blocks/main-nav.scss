@@ -5,7 +5,6 @@
 }
 
 .main-nav__logo-link {
-  display: block;
   width: 86px;
   height: 79px;
 
@@ -14,6 +13,7 @@
     width: 112px;
     height: 46px;
     margin: 22px 205px 20px 51px;
+    background-color: #cccccc;
   }
 
   @media (min-width: $desktop-width) {
