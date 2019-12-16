@@ -1,7 +1,86 @@
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-nav__logo-link {
+  width: 86px;
+  height: 79px;
+
+  @media (min-width: $tablet-width) {
+    // временное решение, после добавления графики будут изменения
+    width: 112px;
+    height: 46px;
+    margin: 22px 205px 20px 51px;
+    background-color: #cccccc;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+    margin: 9px 101px 7px 45px;
+    order: 1;
+  }
+}
+
 .main-nav__open-button {
   width: 79px;
   height: 79px;
+  margin-left: auto;
   background-color: $white;
   border: 0 none;
+  outline: 1px solid red; // временно
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__text {
+  display: none;
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: block;
+    order: 3;
+    padding: 18px 50px 20px 50px;
+    background-color: $white-smoke;
+  }
+
+  &--index {
+    @media (min-width: $tablet-width) {
+      background-color: $snow;
+    }
+  }
+}
+
+.main-nav__list {
+  &--user {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+  }
+
+  &--site {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      order: 0;
+    }
+  }
+
+  &--promo {
+    @media (min-width: $desktop-width) {
+      display: block;
+      order: 2;
+    }
+  }
 }

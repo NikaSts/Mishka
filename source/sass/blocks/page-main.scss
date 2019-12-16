@@ -1,23 +1,110 @@
-.page-main__title {
-  @include title(27px, 30px);
-
-  /* временно */
-  width: 320px;
+.page-main__title-wrapper {
   height: 177px;
+  padding: 71px 30px;
+  background-color: $white-smoke;
 
-  text-align: center;
-  background-color: $light-grey;
+  @media (min-width: $tablet-width) {
+    min-height: 226px;
+    padding: 93px 130px 83px 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 317px;
+    padding: 154px 130px 92px 130px;
+  }
+
+  &--index {
+    min-height: 283px;
+    background: url("../img/hero-mobile@1x.jpg") no-repeat center;
+    background-color: $snow;
+
+    @media (min-width: $tablet-width) {
+      min-height: 746px;
+      margin-bottom: -119px;
+    }
+  }
 }
 
-.page-main__title--index {
-  /* временно */
-  height: 270px;
+.page-main__title {
+  display: block;
+  width: $mobile-width - 60px;
+  margin: 0 auto;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: $black;
 
-  color: #010000;
-  background: url("../img/hero-mobile@1x.jpg") no-repeat center;
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    width: 560px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  &--index {
+    color: #010000;
+
+    @media (min-width: $tablet-width) {
+      color: $black;
+    }
+  }
 }
 
 .page-main__text {
-  font-size: 13px;
-  line-height: 24px;
+  &--form {
+    width: $mobile-width - 60px;
+    margin: 0 auto;
+    padding: 22px 0 24px 0;
+    font-size: 13px;
+    line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      width: $tablet-width - 100px;
+      padding: 70px 0 10px 0;
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+}
+
+.page-main__catalog-nav,
+// проверить как центруется контент
+.page-main__promo,
+.page-main__about-us,
+.page-main__review,
+.page-main__contacts,
+// подумать над сеткой и центровкой
+.page-main__manufacture,
+.page-main__form {
+  margin: 0 auto;
+}
+
+.page-main__contacts {
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 105px;
+  }
+}
+
+.page-main__manufacture {
+  margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 105px;
+  }
 }

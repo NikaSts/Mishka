@@ -1,3 +1,24 @@
 .social-list {
-  @include no-list;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 240px;
+  padding: 20px 0 0 0;
+  list-style: none;
+  box-shadow: 0 1px 0 rgba($silver, 0.1);
+}
+
+.social-list__item {
+  margin-bottom: 20px;
+
+  &:not(:nth-child(4n + 1)) { // Чтобы при добавлении новых элементов, они оказывались во второй строке по центру
+    margin-left: 20px;
+  }
+}
+
+.social-list__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  outline: 1px solid red;
 }

@@ -1,4 +1,22 @@
 .page-header {
-  box-shadow: 0 1px 0 0 $light-grey,
-    inset 0 1px 0 0 $light-grey;
+  box-shadow: 0 1px 0 0 $white-smoke,
+    inset 0 1px 0 0 $white-smoke;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+  }
+}
+
+.page-header__nav {
+  width: $mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    margin-bottom: -62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }

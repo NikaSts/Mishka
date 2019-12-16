@@ -1,3 +1,18 @@
-.catalog {
-  background-color: $white;
+.catalog__list {
+  @include no-list;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 67px 50px 53px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: $desktop-width;
+  }
 }
