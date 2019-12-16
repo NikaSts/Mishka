@@ -1,38 +1,86 @@
+.about-us {
+  width: $mobile-width;
+  padding: 32px 30px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 56px 50px 84px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 56px 225px 84px 225px;
+  }
+}
+
 .about-us__title {
-  @include title(25px, 30px);
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about-us__list {
   @include no-list;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: -8px;
+    column-count: 2;
+    column-gap: 1px;
+  }
 }
 
 .about-us__item {
+  display: block;
+  width: $mobile-width - 60px;
+  padding-top: 83px;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   color: $black;
-}
 
-.about-us__item--eco-materials {
-  background: url("../img/svg/icon-feature-flower.svg") no-repeat left;
-}
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    padding-top: 111px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 
-.about-us__item--scandinavian-style {
-  background: url("../img/svg/icon-feature-money.svg") no-repeat left;
-}
+  &--eco-materials {
+    background: url("../img/svg/icon-feature-flower.svg") no-repeat left;
+  }
 
-.about-us__item--like-increaser {
-  background: url("../img/svg/icon-feature-heart.svg") no-repeat left;
-}
+  &--scandinavian-style {
+    background: url("../img/svg/icon-feature-money.svg") no-repeat left;
+  }
 
-.about-us__item--handmade {
-  background: url("../img/svg/icon-feature-ball.svg") no-repeat left;
-}
+  &--like-increaser {
+    background: url("../img/svg/icon-feature-heart.svg") no-repeat left;
+  }
 
-.about-us__item--domestic-producer {
-  background: url("../img/svg/icon-feature-rocket.svg") no-repeat left;
-}
+  &--handmade {
+    background: url("../img/svg/icon-feature-ball.svg") no-repeat left;
+  }
 
-.about-us__item--gift-box {
-  background: url("../img/svg/icon-feature-gift.svg") no-repeat left;
+  &--domestic-producer {
+    background: url("../img/svg/icon-feature-rocket.svg") no-repeat left;
+  }
+
+  &--gift-box {
+    background: url("../img/svg/icon-feature-gift.svg") no-repeat left;
+  }
 }

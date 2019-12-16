@@ -1,6 +1,19 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 183px;
+  padding: 12px 0;
+}
+
 .copyright__text {
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
   color: $black;
+}
+
+.copyright__logo-link {
+  width: 27px;
+  height: 34px;
 }

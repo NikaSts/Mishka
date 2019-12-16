@@ -1,27 +1,46 @@
 .catalog-nav__list {
   @include no-list;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .catalog-nav__link {
-  /* временно */
-  width: 320px;
-  height: 103px;
-
   display: block;
+  width: $mobile-width;
+  height: 103px;
+  margin: 0 auto;
+  padding: 25px 130px 25px 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
   color: $white;
-}
 
-.catalog-nav__link--home {
-  background-color: $light-green;
-}
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 119px;
+    padding: 27px 150px 27px 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-.catalog-nav__link--toys {
-  background-color: $medium-green;
-}
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    padding: 27px 350px 27px 36px;
+  }
 
-.catalog-nav__link:active {
-  color: rgba($white, 0.3);
+  &--home {
+    background-color: $green-cyan;
+  }
+
+  &--toys {
+    background-color: $light-green;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 }
