@@ -1,46 +1,73 @@
 .review {
   width: $mobile-width;
-  padding: 0 30px;
+  padding: 25px 30px 50px 30px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
     width: $tablet-width;
-    padding: 0 50px;
+    padding: 79px 50px 155px 50px;
+    background: url("../img/review@1x.jpg") no-repeat left top;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding: 0 50px 0 224px;
+    padding: 79px 50px 100px 224px;
+    background-position: 50px top;
   }
 }
 
 .review__title {
-  margin: 0;
+  margin: 0 0 24px 0;
   font-size: 25px;
   line-height: 30px;
   color: $black;
 
   @media (min-width: $tablet-width) {
+    width: 334px;
+    margin: -2px 0 49px -4px;
     font-size: 43px;
     line-height: 50px;
+    order: -2;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 350px;
+    margin: -9px 0 49px -3px;
     font-size: 53px;
     line-height: 57px;
   }
 }
 
-.review__item {
-  margin: 0;
-}
-
 .review__text {
+  width: 258px;
+  margin: 0 0 25px 0;
   font-size: 15px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width - 100px;
+    margin-bottom: 57px;
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    margin-bottom: 38px;
+  }
+}
+
+.review__author-wrapper {
+  margin: 0 0 29px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: auto auto 0 0;
+  }
 }
 
 .review__author-name {
+  display: block;
+  margin: 0 0 3px 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -49,8 +76,23 @@
 }
 
 .review__author-id {
+  display: block;
+  margin: 0;
   font-size: 17px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.review__buttons {
+  margin: 0 0 39px 0;
+
+  @media (min-width: $tablet-width) {
+    height: 26px;
+    margin: auto 19px 15px auto;
+  }
 }
 
 .review__write-button {
@@ -58,6 +100,7 @@
 
   width: 260px;
   min-height: 52px;
+  padding: 14px;
   border: 2px solid $charcoal;
 
   &:hover,
@@ -69,5 +112,12 @@
   &:active {
     color: rgba($white, 0.3);
     background-color: $charcoal;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 175px;
+    margin: 0 0 auto auto;
+    padding: 14px 10px;
+    order: -1;
   }
 }

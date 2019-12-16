@@ -1,12 +1,22 @@
 .review-controls {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 137px;
+  }
 }
 
 .review-controls__button {
-  height: 30px;
   width: 130px;
-
+  height: 52px;
   background-color: $white;
-  border: 0 none;
-  outline: 1px solid tomato; // временно
+  border: 1px solid $light-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 26px;
+    border: 0 none;
+    outline: 1px solid red;
+  }
 }
