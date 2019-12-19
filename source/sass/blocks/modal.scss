@@ -1,11 +1,38 @@
 .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($white, 0.9);
+  z-index: 10;
+}
+
+.modal__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
   width: $mobile-width;
-  height: 336px;
+  min-height: 336px;
+  padding: 30px 29px 43px 29px;
+  // margin: auto;
   background-color: $white;
+  border: 1px solid $silver;
+  box-shadow: 0 5px 10px rgba($silver, 0.9);
+  transform: translate(-50%, -50%);
+  z-index: 20;
+
+  @media (min-width: $tablet-width) {
+    width: 567px;
+    padding: 33px 108px 43px 106px;
+  }
 }
 
 .modal__title {
-  margin: 0;
+  margin: 0 0 12px 0;
   font-size: 25px;
   line-height: 30px;
   color: $black;
@@ -13,7 +40,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 14px 0;
     font-size: 30px;
     line-height: 57px;
+    letter-spacing: -0.01em;
   }
 }
