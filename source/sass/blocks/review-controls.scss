@@ -10,13 +10,31 @@
 .review-controls__button {
   width: 130px;
   height: 52px;
-  background-color: $white;
+  background: $white url("../img/svg/icon-left-arrow.svg") no-repeat 39px 12px;
+  background-size: 50px 26px;
   border: 1px solid $light-gray;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 50px;
     height: 26px;
     border: 0 none;
-    outline: 1px solid red;
+    background-size: 50px 26px;
+    background-position: 0 0;
+  }
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: $white;
+    opacity: 0.3;
   }
 }

@@ -1,4 +1,4 @@
-.promo {     // есть перестроение, но пока без ПП
+.promo {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -8,21 +8,44 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: $tablet-width;
     min-height: 617px;
-    padding: 27px 50px 37px 50px;
+    padding: 44px 50px 37px 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    min-height: 817px;
-    padding: 120px 50px 20px 220px;
-    outline: 1px solid red;
+    min-height: 806px;
+    padding: 71px 50px 9px 224px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -22px;
+    left: 0;
+    width: 100%;
+    height: 23px;
+    background: url("../img/svg/bg-zigzag-line.svg") no-repeat center bottom;
+    background-size: contain;
+    transform: rotate(180deg);
+
+    @media (min-width: $tablet-width) {
+      bottom: -14px;
+      background-size: 768px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 2px;
+      height: 23px;
+      background-size: 1050px;
+    }
   }
 }
 
 .promo__title {
-  margin: 0;
+  margin: 0 0 5px 0;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -30,61 +53,75 @@
   order: -1;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto 46px -3px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 123px;
     width: 100%;
     font-size: 53px;
     line-height: 57px;
+    letter-spacing: -0.005em;
   }
 }
 
 .promo__subtitle {
-  margin: 4px 0 0 0;
+  margin: 0 0 24px 0;
   font-size: 17px;
   line-height: 20px;
   color: $green-cyan;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 13px 23px 49px auto;
     width: 80px;
-    margin-left: 150px;
     line-height: 17px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 100px;
+    top: 126px;
+    left: 92px;
     margin-left: 0;
   }
 }
 
 .promo__description-wrapper {
   @media (min-width: $tablet-width) {
+    margin: -10px 0 0 0;
     width: 335px;
+    padding: 0 0 17px 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 500px;
+    margin: 0;
+    padding: 156px 0 17px 0;
   }
 }
 
 .promo__description {
-  margin-top: 24px;
+  margin: 0 0 17px 0;
   font-size: 15px;
   line-height: 24px;
   color: $charcoal;
 
   @media (min-width: $tablet-width) {
+    width: 300px;
+    margin: 0 0 38px 0;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 50px 0;
   }
 }
 
 .promo__table {
-  margin-top: 18px;
   border-collapse: collapse;
 }
 
@@ -100,23 +137,39 @@
 }
 
 .promo__image {
-  margin-top: 29px;
+  margin: 29px 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 333px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 636px;
+  }
 }
 
 .promo__button-wrapper {
   @media (min-width: $tablet-width) {
-    margin-top: -150px;
+    margin-top: -116px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -148px;
   }
 }
 
 .promo__price {
-  margin: 23px 0 0 0;
+  margin: 0 0 26px 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin: -7px 0 34px -4px;
     font-size: 20px;
   }
 }
@@ -124,8 +177,7 @@
 .promo__request-button {
   @include button($charcoal, $white);
   width: 260px;
-  margin-top: 26px;
-  padding: 15px 30px;
+  padding: 14px 30px;
   border: 2px solid $charcoal;
 
   @media (min-width: $tablet-width) {

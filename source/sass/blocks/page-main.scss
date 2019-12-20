@@ -21,6 +21,7 @@
     @media (min-width: $tablet-width) {
       min-height: 746px;
       margin-bottom: -119px;
+      padding: 153px 130px 92px 130px;
     }
   }
 }
@@ -83,12 +84,6 @@
 }
 
 .page-main__contacts {
-  margin-bottom: 39px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
-  }
-
   @media (min-width: $desktop-width) {
     margin-bottom: 105px;
   }
