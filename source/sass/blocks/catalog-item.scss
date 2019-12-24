@@ -3,10 +3,10 @@
   border: 1px solid $light-gray;
 
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 54px;
+      margin-bottom: 52px;
     }
 
     @media (min-width: $desktop-width) {
@@ -21,24 +21,64 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    flex-direction: column;
     width: 316px;
     min-height: 660px;
     margin-bottom: 0;
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
 }
 
 .catalog-item__image-link {
-  display: block;
   height: 195px;
+
+  @media (min-width: $tablet-width) {
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 462px;
+  }
+}
+
+.catalog-item__image {
+  width: 260px;
+  height: 195px;
+  object-fit: cover;
+  object-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
+}
+
+.catalog-item__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 27px 27px 27px;
+
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
 }
 
 .catalog-item__title-link {
   display: block;
-}
-
-.catalog-item__info-wrapper {
-  padding: 24px 27px 27px 27px;
 }
 
 .catalog-item__title {
@@ -51,16 +91,30 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+
+  &:hover,
+  &:focus {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
 }
 
 .catalog-item__description {
-  margin: 6px 0 19px 0;
+  margin: 6px 0 14px 0;
   font-size: 13px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
 }
 
 .catalog-item__button-wrapper {
   display: flex;
+  margin-top: auto;
   justify-content: space-between;
   padding-top: 21px;
   border-top: 1px solid $light-gray;
@@ -72,6 +126,10 @@
   line-height: 24px;
   font-weight: bold;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .catalog-item__cart-button {

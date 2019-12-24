@@ -63,12 +63,13 @@
     display: block;
     order: 3;
     padding: 18px 50px 20px 50px;
-    background-color: $white-smoke;
+    background-color: transparent;
+    z-index: 3;
   }
 
   &--index {
     @media (min-width: $tablet-width) {
-      background-color: $snow;
+      background-color: transparent;
     }
   }
 }

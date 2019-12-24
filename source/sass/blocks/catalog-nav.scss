@@ -1,27 +1,3 @@
-.catalog-nav {
-  position: relative;
-
-  &::after {
-    @media (min-width: $tablet-width) {  // постонно смещается по оси Х
-      position: absolute;
-      content: "";
-      bottom: -12px;
-      left: -10px;
-      width: 100%;
-      height: 23px;
-      background-image: url("../img/svg/bg-zigzag-fill.svg");
-      background-size: 770px 22px;
-    }
-
-    @media (min-width: $desktop-width) {
-      bottom: -17px;
-      left: 37px;
-      height: 34px;
-      background-size: 1250px 34px;
-    }
-  }
-}
-
 .catalog-nav__list {
   @include no-list;
   background-color: transparent;
