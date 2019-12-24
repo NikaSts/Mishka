@@ -3,10 +3,10 @@
   border: 1px solid $light-gray;
 
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 54px;
+      margin-bottom: 52px;
     }
 
     @media (min-width: $desktop-width) {
@@ -25,6 +25,15 @@
     width: 316px;
     min-height: 660px;
     margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
   }
 }
 
@@ -81,6 +90,15 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
   }
 }
 

@@ -61,8 +61,14 @@
     margin-bottom: 0;
   }
 
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 -2px 0 0 $green-cyan;
+  }
+
   &:active {
     color: $charcoal;
+    box-shadow: inset 0 -2px 0 0 $green-cyan;
   }
 
   &::placeholder {
@@ -279,8 +285,14 @@
     width: 100%;
   }
 
+  &:hover,
+  &:focus {
+    border: 2px solid $green-cyan;
+  }
+
   &:active {
     color: $charcoal;
+    border: 2px solid $green-cyan;
   }
 
   &::placeholder {

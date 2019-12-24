@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     width: 437px;
     padding: 0 33px;
-    background-color: $white-smoke;
+    background-color: transparent;
     z-index: 3;
   }
 
@@ -19,7 +19,7 @@
 
   &--index {
     @media (min-width: $tablet-width) {
-      background-color: $snow;
+      background-color: transparent;
     }
 
     @media (min-width: $desktop-width) {
@@ -41,6 +41,12 @@
 
   @media (min-width: $desktop-width) {
     padding: 31px 20px 33px 50px;
+  }
+
+  &:not(:last-child) {
+    @media (min-width: $desktop-width) {
+      border-right: 1px solid $light-gray;
+    }
   }
 }
 

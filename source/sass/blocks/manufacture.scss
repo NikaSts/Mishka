@@ -1,4 +1,5 @@
 .manufacture {
+  position: relative;
   width: $mobile-width - 60px;
   padding: 95px 0 0 0;
   border: 1px solid $light-gray;
@@ -25,6 +26,37 @@
   @media (min-width: $desktop-width) {
     /* Временно для сетки */
     width: 682px;
+  }
+}
+
+.manufacture__play-button {
+  position: absolute;
+  content: "";
+  top: 132px;
+  right: 71px;
+  width: 108px;
+  height: 78px;
+  background: transparent url("../img/svg/icon-play.svg") no-repeat 0 0;
+  border: 0 none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 189px;
+    right: 274px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 190px;
+    left: 290px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    opacity: 30%;
   }
 }
 

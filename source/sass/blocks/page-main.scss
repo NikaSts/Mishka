@@ -7,6 +7,7 @@
   @media (min-width: $tablet-width) {
     min-height: 226px;
     padding: 93px 130px 83px 130px;
+    border-top: 1px solid $light-gray;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,7 +50,7 @@
 
       @media (min-width: $desktop-width) {
         bottom: -17px;
-        left: 7px;
+        left: 12px;
         background-size: 1250px 34px;
       }
     }
