@@ -102,8 +102,7 @@
         </li>
       </ul>
     </section>
-    <section class="page-main__manufacture manufacture">
-      <h2 class="manufacture__title">Процесс производства</h2>
+    <section class="page-main__manufacture manufacture" aria-labelledby="product-manufacture">
       <video class="manufacture__video" poster="https://via.placeholder.com/260x150" width="260" height="150"
         aria-describedby="video-description">
         <source src="video.ogv" type="video/ogg">
@@ -111,10 +110,13 @@
         <source src="video.webm" type="video/webm">
       </video>
       <p class="visually-hidden" id="video-description">Аудиодескрипция с описанием происходящего на видео</p>
-      <p class="manufacture__text">
-        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-      </p>
-      <a class="manufacture__order-button" href="#">Сделать заказ</a>
+      <div class="manufacture__info-wrapper">
+        <h2 class="manufacture__title" id="product-manufacture">Процесс производства</h2>
+        <p class="manufacture__text">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="manufacture__order-button" href="#">Сделать заказ</a>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -143,21 +145,23 @@
   </footer>
 
   <section class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <form class="modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="modal-form__fieldset">
-        <legend class="modal-form__legend">Выберите размер:</legend>
-        <div class="modal-form__inputs-wrapper">
-          <label class="modal-form__label" for="small">S</label>
-          <input class="visually-hidden" type="radio" name="size" value="small" id="small" checked>
-          <label class="modal-form__label" for="medium">M</label>
-          <input class="visually-hidden" type="radio" name="size" value="medium" id="medium">
-          <label class="modal-form__label" for="large">L</label>
-          <input class="visually-hidden" type="radio" name="size" value="large" id="large">
-        </div>
-      </fieldset>
-      <button class="modal-form__add-button button" type="submit">Добавить</button>
-    </form>
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+      <form class="modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="modal-form__fieldset">
+          <legend class="modal-form__legend">Выберите размер:</legend>
+          <div class="modal-form__inputs-wrapper">
+            <label class="modal-form__label" for="small">S</label>
+            <input class="visually-hidden" type="radio" name="size" value="small" id="small" checked>
+            <label class="modal-form__label" for="medium">M</label>
+            <input class="visually-hidden" type="radio" name="size" value="medium" id="medium">
+            <label class="modal-form__label" for="large">L</label>
+            <input class="visually-hidden" type="radio" name="size" value="large" id="large">
+          </div>
+        </fieldset>
+        <button class="modal-form__add-button" type="submit">Добавить</button>
+      </form>
+    </div>
   </section>
 
 </body>

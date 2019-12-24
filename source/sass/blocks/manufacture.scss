@@ -1,30 +1,110 @@
 .manufacture {
   width: $mobile-width - 60px;
+  padding: 95px 0 0 0;
   border: 1px solid $light-gray;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width - 100px;
+    padding: 0 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: $desktop-width - 100px;
+  }
+}
+
+.manufacture__video {
+  @media (min-width: $tablet-width) {
+    /* Временно для сетки */
+    width: 668px;
+    height: 455px;
+    background-color: #cccccc;
+  }
+
+  @media (min-width: $desktop-width) {
+    /* Временно для сетки */
+    width: 682px;
+  }
+}
+
+.manufacture__info-wrapper {
+  position: relative;
+  padding: 22px 42px 33px 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 40px 33px 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 368px;
+    padding: 94px 40px 33px 78px;
+  }
 }
 
 .manufacture__title {
-  margin: 0;
+  position: absolute;
+  top: -241px;
+  left: 89px;
+  width: 140px;
   font-size: 17px;
   line-height: 24px;
   color: $black;
 
   @media (min-width: $tablet-width) {
+    position: static;
+    width: 250px;
+    margin: 0 0 33px 65px;
     font-size: 20px;
   }
 
-  background: url("../img/svg/icon-video.svg") no-repeat left;
+  @media (min-width: $desktop-width) {
+    width: 155px;
+    margin: 0 0 34px 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 11px;
+    left: -56px;
+    width: 32px;
+    height: 22px;
+    background: url("../img/svg/icon-video.svg") no-repeat center;
+
+    @media (min-width: $tablet-width) {
+      top: 33px;
+      left: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 46px;
+      left: 79px;
+    }
+  }
 }
 
 .manufacture__text {
+  margin: 0 0 25px 0;
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 35px 0;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 46px 0;
+  }
 }
 
 .manufacture__order-button {
   @include button($charcoal, $white);
   width: 192px;
   min-height: 52px;
+  padding: 14px;
   border: 2px solid $charcoal;
 
   &:hover,
@@ -36,5 +116,13 @@
   &:active {
     color: rgba($white, 0.3);
     background-color: $charcoal;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
   }
 }

@@ -8,26 +8,48 @@
   border: 0 none;
 }
 
+.modal-form__inputs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+
+  input[type="radio"]:checked + label {
+    border: 2px solid $green-cyan;
+  }
+}
+
 .modal-form__legend {
-  margin: 0;
   padding: 0;
+  margin: 0 auto 23px auto;
   font-size: 15px;
   line-height: 30px;
-  text-align: center;
   color: $charcoal;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 21px auto;
+    font-size: 17px;
+  }
 }
 
 .modal-form__label {
+  width: 82px;
+  height: 52px;
+  padding: 15px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
   text-align: center;
   color: $charcoal;
+  border: 2px solid rgba($charcoal, 0.1);
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
 }
 
 .modal-form__add-button {
   @include button($white, $green-cyan);
-  width: 260px;
+  width: 100%;
   min-height: 52px;
   border: 0 none;
 

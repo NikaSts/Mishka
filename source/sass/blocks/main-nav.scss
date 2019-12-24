@@ -25,16 +25,29 @@
 }
 
 .main-nav__open-button {
+  position: relative;
   width: 79px;
   height: 79px;
   margin-left: auto;
   background-color: $white;
   border: 0 none;
-  outline: 1px solid red; // временно
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 32px;
+    left: 28px;
+    width: 20px;
+    height: 2px;
+    background-color: $black;
+    box-shadow:
+      0 6px 0 0,
+      0 12px 0 0;
   }
 }
 
