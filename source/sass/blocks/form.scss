@@ -157,7 +157,7 @@
   }
 
   &--name {
-    padding-bottom: 9px;
+    padding-bottom: 13px;
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -199,7 +199,7 @@
   }
 
   &--phone {
-    padding-bottom: 9px;
+    padding-bottom: 14px;
 
     @media (min-width: $tablet-width) {
       min-height: 64px;
@@ -223,7 +223,7 @@
   }
 
   &--email {
-    padding-bottom: 9px;
+    padding-bottom: 14px;
 
     @media (min-width: $tablet-width) {
       padding: 25px 50px 51px 218px;
