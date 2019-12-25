@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <title>HTML Academy: Мишка</title>
   <link rel="preload" type="font/woff2" href="fonts/opensans.woff2" as="font">
   <link rel="preload" type="font/woff2" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -16,8 +17,11 @@
   <header class="page-header">
     <nav class="page-header__nav main-nav">
       <a class="main-nav__logo-link" href="index.html">
-        <img class="main-nav__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35"
-          alt="Логотип магазина Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+          <img class="main-nav__logo-image" src="img/svg/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+        </picture>
       </a>
       <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list main-nav__list--site site-list">

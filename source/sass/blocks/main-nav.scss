@@ -5,6 +5,8 @@
 }
 
 .main-nav__logo-link {
+  display: block;
+  margin: 22px 0 0 116px;
   width: 86px;
   height: 79px;
 
@@ -22,6 +24,12 @@
     margin: 9px 101px 7px 45px;
     order: 1;
   }
+}
+
+.main-nav__logo-image {
+  width: 86px;
+  height: 79px;
+  object-fit: cover;
 }
 
 .main-nav__open-button {
