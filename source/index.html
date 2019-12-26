@@ -20,7 +20,8 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
-          <img class="main-nav__logo-image" src="img/svg/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+          <img class="main-nav__logo-image" src="img/svg/logo-mobile.svg" width="86" height="35"
+            alt="Логотип магазина Мишка">
         </picture>
       </a>
       <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -87,8 +88,17 @@
           </tr>
         </table>
       </div>
-      <img class="promo__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
-        alt="Разноцветные корзинки крупной вязки">
+      <picture>
+        <source type="image/webp" media="(min-width: 1150px)"
+          srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+        <img class="promo__image" src="img/triple-set-mobile@1x.jpg " srcset="img/triple-set-mobile@2x.jpg 2x"
+          width="260" height="315" alt="Разноцветные корзинки крупной вязки">
+      </picture>
       <div class="promo__button-wrapper">
         <p class="promo__price">Цена: 990 руб.</p>
         <button class="promo__request-button" type="button">Заказать</button>
@@ -141,7 +151,8 @@
         <picture class="contacts__picture">
           <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="395" alt="Карта проезда">
+          <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320"
+            height="395" alt="Карта проезда">
         </picture>
         <script type="text/javascript" charset="utf-8" async
           src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3d967fcd3b9a0a008ff4067f5682bcf01d3fa9649eab46ca367de43770075884&amp;width=100%25&amp;height=457&amp;lang=ru_RU&amp;scroll=true">

@@ -8,14 +8,12 @@
   display: block;
   margin: 22px 0 0 116px;
   width: 86px;
-  height: 79px;
+  height: 35px;
 
   @media (min-width: $tablet-width) {
-    // временное решение, после добавления графики будут изменения
     width: 112px;
     height: 46px;
     margin: 22px 205px 20px 51px;
-    background-color: #cccccc;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,8 +26,19 @@
 
 .main-nav__logo-image {
   width: 86px;
-  height: 79px;
+  height: 35px;
   object-fit: cover;
+  object-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
 }
 
 .main-nav__open-button {
