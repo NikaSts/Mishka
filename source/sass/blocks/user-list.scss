@@ -29,12 +29,12 @@
     padding: 22px 50px;
   }
 
-  &:hover,
+  &:hover[href],
   &:focus {
     color: rgba($black, 0.6);
   }
 
-  &:active {
+  &:active[href] {
     color: rgba($black, 0.3);
   }
 

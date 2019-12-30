@@ -22,6 +22,15 @@
     margin: 9px 101px 7px 45px;
     order: 1;
   }
+
+  &[href]:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__logo-image {
