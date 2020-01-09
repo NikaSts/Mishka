@@ -88,8 +88,6 @@
   position: relative;
   width: $mobile-width - 60px;
   margin: 0 auto;
-  padding: 0;
-  border: 0 none;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;

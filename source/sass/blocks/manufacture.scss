@@ -16,15 +16,14 @@
 }
 
 .manufacture__video {
+  object-fit: cover;
+
   @media (min-width: $tablet-width) {
-    /* Временно для сетки */
     width: 668px;
     height: 455px;
-    background-color: #cccccc;
   }
 
   @media (min-width: $desktop-width) {
-    /* Временно для сетки */
     width: 682px;
   }
 }

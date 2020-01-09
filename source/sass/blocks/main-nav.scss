@@ -5,15 +5,15 @@
 }
 
 .main-nav__logo-link {
+  display: block;
+  margin: 22px 0 0 116px;
   width: 86px;
-  height: 79px;
+  height: 35px;
 
   @media (min-width: $tablet-width) {
-    // временное решение, после добавления графики будут изменения
     width: 112px;
     height: 46px;
     margin: 22px 205px 20px 51px;
-    background-color: #cccccc;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +21,32 @@
     height: 72px;
     margin: 9px 101px 7px 45px;
     order: 1;
+  }
+
+  &[href]:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__logo-image {
+  width: 86px;
+  height: 35px;
+  object-fit: cover;
+  object-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
   }
 }
 

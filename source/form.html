@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <title>HTML Academy: Мишка</title>
   <link rel="preload" type="font/woff2" href="fonts/opensans.woff2" as="font">
   <link rel="preload" type="font/woff2" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -16,8 +17,12 @@
   <header class="page-header">
     <nav class="page-header__nav main-nav">
       <a class="main-nav__logo-link" href="index.html">
-        <img class="main-nav__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35"
-          alt="Логотип магазина Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+          <img class="main-nav__logo-image" src="img/svg/logo-mobile.svg" width="86" height="35"
+            alt="Логотип магазина Мишка">
+        </picture>
       </a>
       <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list main-nav__list--site site-list">
@@ -56,17 +61,17 @@
       свяжемся
       с вами, чтобы уточнить детали.</p>
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="form__fieldset form__fieldset--product-type filter filter--radio">
-        <legend class="form__legend">Тип</legend>
+      <div class="form__fieldset form__fieldset--product-type filter filter--radio">
+        <p class="form__legend">Тип</p>
         <input class="visually-hidden filter__input" type="radio" name="type" value="accessory" id="accessory" checked>
         <label class="form__label filter__label filter__label--radio" for="accessory">Аксессуар для
           интерьера</label>
         <input class="visually-hidden filter__input" type="radio" name="type" value="toy" id="toy">
         <label class="form__label filter__label filter__label--radio" for="toy">Детская игрушка</label>
-      </fieldset>
+      </div>
       <div class="form__fieldset-wrapper">
-        <fieldset class="form__fieldset form__fieldset--product-color filter filter--checkbox">
-          <legend class="form__legend">Цвет</legend>
+        <div class="form__fieldset form__fieldset--product-color filter filter--checkbox">
+          <p class="form__legend">Цвет</p>
           <input class="visually-hidden filter__input" type="checkbox" name="white" id="white" checked>
           <label class="form__label filter__label filter__label--checkbox" for="white">Белый</label>
           <input class="visually-hidden filter__input" type="checkbox" name="gray" id="gray" checked>
@@ -79,17 +84,17 @@
           <label class="form__label filter__label filter__label--checkbox" for="pink">Розовый</label>
           <input class="visually-hidden filter__input" type="checkbox" name="orange" id="orange">
           <label class="form__label filter__label filter__label--checkbox" for="orange">Оранжевый</label>
-        </fieldset>
+        </div>
       </div>
-      <fieldset class="form__fieldset form__fieldset--name">
-        <legend class="form__legend">ФИО</legend>
+      <div class="form__fieldset form__fieldset--name">
+        <p class="form__legend">ФИО</p>
         <label class="form__label" for="name">Имя:</label>
         <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*">
         <label class="form__label" for="surname">Фамилия:</label>
         <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
         <label class="form__label" for="patronymic">Отчество:</label>
         <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
-      </fieldset>
+      </div>
       <div class="form__fieldset-wrapper">
         <div class="form__fieldset form__fieldset--phone">
           <label class="form__legend" for="phone">Тел</label>

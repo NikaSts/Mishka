@@ -127,6 +127,7 @@
 }
 
 .contacts__map {
+  width: 100%;
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
@@ -140,6 +141,15 @@
     width: 525px;
     height: 457px;
   }
+}
+
+.contacts__picture {
+  display: none;
+  margin: 0 auto;
+}
+
+.contacts__image {
+  display: none;
 }
 
 .contacts__feedback-button {

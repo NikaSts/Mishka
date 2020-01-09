@@ -1,5 +1,7 @@
 .catalog-nav__list {
-  @include no-list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   background-color: transparent;
 
   @media (min-width: $tablet-width) {

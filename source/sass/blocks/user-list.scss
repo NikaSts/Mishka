@@ -1,6 +1,8 @@
 .user-list {
-  @include no-list;
   display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     width: 400px;
@@ -27,12 +29,12 @@
     padding: 22px 50px;
   }
 
-  &:hover,
+  &:hover[href],
   &:focus {
     color: rgba($black, 0.6);
   }
 
-  &:active {
+  &:active[href] {
     color: rgba($black, 0.3);
   }
 

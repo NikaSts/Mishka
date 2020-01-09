@@ -34,9 +34,12 @@
 }
 
 .about-us__list {
-  @include no-list;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
 
   @media (min-width: $tablet-width) {
     display: block;
