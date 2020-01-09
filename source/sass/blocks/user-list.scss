@@ -1,5 +1,4 @@
 .user-list {
-  //display: none;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -60,9 +59,7 @@
   top: 0;
   left: 0;
 
-  path{
   fill: red; //rgba($black, 0.2);
-  }
 }
 
 .user-list__span {

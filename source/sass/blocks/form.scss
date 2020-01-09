@@ -5,6 +5,9 @@
   color: $charcoal;
 
   @media (min-width: $tablet-width) {
+    // чтобы работала min-height в IE
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
 }
