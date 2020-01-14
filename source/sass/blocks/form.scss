@@ -74,6 +74,12 @@
     box-shadow: inset 0 -2px 0 0 $green-cyan;
   }
 
+  &:hover + .form__svg,
+  &:focus + .form__svg,
+  &:active + .form__svg {
+    fill: $green-cyan;
+  }
+
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
@@ -267,6 +273,37 @@
 
     @media (min-width: $desktop-width) {
       padding: 50px 115px 48px 115px;
+    }
+  }
+}
+
+.form__svg {
+  position: absolute;
+  top: 34px;
+  right: 8px;
+  fill: rgba($black, 0.2);
+
+  @media (min-width: $tablet-width) {
+    top: 60px;
+    right: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 61px;
+    right: 123px;
+  }
+
+  &--email {
+    right: 4px;
+
+    @media (min-width: $tablet-width) {
+      top: 35px;
+      right: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 35px;
+      right: 119px;
     }
   }
 }

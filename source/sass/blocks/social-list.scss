@@ -22,8 +22,21 @@
 }
 
 .social-list__link {
-  display: block;
+  display: flex;
   width: 40px;
   height: 40px;
-  outline: 1px solid red;
+
+  &:hover .social-list__svg,
+  &:focus .social-list__svg {
+    fill: $medium-green;
+  }
+
+  &:active .social-list__svg {
+    opacity: 0.3;
+  }
+
+}
+
+.social-list__svg {
+  margin: auto;
 }

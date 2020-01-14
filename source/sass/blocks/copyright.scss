@@ -1,9 +1,23 @@
 .copyright {
+  width: 183px;
+  padding: 12px 0;
+}
+
+.copyright__logo-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 183px;
-  padding: 12px 0;
+  height: 34px;
+
+  &:hover .copyright__logo-svg,
+  &:focus .copyright__logo-svg {
+    fill: $medium-green;
+  }
+
+  &:active .copyright__text,
+  &:active .copyright__logo-svg {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -13,7 +27,6 @@
   color: $black;
 }
 
-.copyright__logo-link {
-  width: 27px;
-  height: 34px;
+.copyright__logo-svg {
+  fill: $green-cyan;
 }
