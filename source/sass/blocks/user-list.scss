@@ -17,7 +17,7 @@
 
 .user-list__link {
   display: block;
-  padding: 26px 62px 29px 76px;
+  padding: 26px 62px 28px 76px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -44,6 +44,15 @@
       border-right: 1px solid $light-gray;
       border-left: 1px solid $light-gray;
     }
+
+    &:hover .user-list__svg--search,
+    &:focus .user-list__svg--search {
+      fill: $green-cyan;
+    }
+
+    &:active .user-list__svg--search {
+      opacity: 0.3;
+    }
   }
 
   &--cart {
@@ -56,10 +65,25 @@
 
 .user-list__svg {
   position: absolute;
-  // временно
-  top: 0;
-  left: 0;
-  fill: red; //rgba($black, 0.2);
+  width: 18px;
+  height: 18px;
+  top: 32px;
+  left: 33px;
+  fill: rgba($black, 0.2);
+
+  @media (min-width: $tablet-width) {
+    top: 36px;
+    left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 37px;
+    left: 34px;
+  }
+
+  &--cart {
+    width: 21px;
+  }
 }
 
 .user-list__span {

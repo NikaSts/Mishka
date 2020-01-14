@@ -45,15 +45,15 @@
 
 .site-list__link {
   display: block;
-  width: 320px;
-  padding: 26px 60px 29px 76px;
+  // width: 320px;
+  padding: 26px 60px 28px 76px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   color: $black;
 
   @media (min-width: $tablet-width) {
-    width: 180px;
+    // width: 180px;
     padding: 18px 18px;
     font-size: 15px;
   }

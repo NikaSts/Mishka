@@ -149,6 +149,10 @@
     margin: -7px 0 34px -4px;
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: -11px 0 34px -4px;
+  }
 }
 
 .promo__request-button {
