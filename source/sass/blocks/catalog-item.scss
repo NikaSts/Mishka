@@ -131,9 +131,23 @@
   }
 }
 
+.catalog-item__svg {
+  opacity: 0.2;
+}
+
 .catalog-item__cart-button {
   padding: 0;
-  // border: 0 none;
+  border: 0 none;
   background-color: white;
   cursor: pointer;
+
+  &:hover .catalog-item__svg,
+  &:focus .catalog-item__svg {
+    fill: $green-cyan;
+    opacity: 1;
+  }
+
+  &:active .catalog-item__svg {
+    opacity: 0.3;
+  }
 }
