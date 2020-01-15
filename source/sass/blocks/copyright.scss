@@ -25,8 +25,10 @@
   line-height: 18px;
   font-weight: bold;
   color: $black;
+  pointer-events: none;
 }
 
 .copyright__logo-svg {
   fill: $green-cyan;
+  pointer-events: none;
 }

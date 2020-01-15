@@ -133,6 +133,7 @@
 
 .catalog-item__svg {
   opacity: 0.2;
+  pointer-events: none;
 }
 
 .catalog-item__cart-button {

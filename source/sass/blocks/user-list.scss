@@ -70,6 +70,7 @@
   top: 32px;
   left: 33px;
   fill: rgba($black, 0.2);
+  pointer-events: none;
 
   @media (min-width: $tablet-width) {
     top: 36px;
