@@ -1,5 +1,4 @@
 .user-list {
-  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -12,14 +11,13 @@
 }
 
 .user-list__item {
-  box-shadow:
-    0 1px 0 0 $light-gray,
-    inset 0 1px 0 0 $light-gray;
+  position: relative;
+  border-top: 1px solid $light-gray;
 }
 
 .user-list__link {
   display: block;
-  padding: 26px 60px 26px 76px;
+  padding: 26px 62px 28px 76px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -38,6 +36,15 @@
     color: rgba($black, 0.3);
   }
 
+  &:hover .user-list__svg,
+  &:focus .user-list__svg {
+    fill: $green-cyan;
+  }
+
+  &:active .user-list__svg {
+    opacity: 0.3;
+  }
+
   &--search {
     @media (min-width: $tablet-width) {
       width: 84px;
@@ -53,6 +60,32 @@
       padding: 31px 50px 33px 82px;
       text-align: right;
     }
+  }
+}
+
+.user-list__svg {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 32px;
+  left: 33px;
+  fill: rgba($black, 0.2);
+  pointer-events: none;
+
+  @media (min-width: $tablet-width) {
+    top: 36px;
+    left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 37px;
+    left: 34px;
+  }
+
+  &--cart {
+    width: 21px;
+    top: 35px;
+    left: 31px;
   }
 }
 

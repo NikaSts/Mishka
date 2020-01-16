@@ -123,4 +123,16 @@
       order: 2;
     }
   }
+
+  &--open {
+    @media (max-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--close {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
 }

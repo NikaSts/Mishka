@@ -71,8 +71,7 @@
   flex-direction: column;
   padding: 24px 27px 27px 27px;
 
-
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     flex-grow: 1;
   }
 }
@@ -132,7 +131,24 @@
   }
 }
 
+.catalog-item__svg {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
 .catalog-item__cart-button {
-  outline: 1px solid red;
+  padding: 0;
+  border: 0 none;
+  background-color: white;
   cursor: pointer;
+
+  &:hover .catalog-item__svg,
+  &:focus .catalog-item__svg {
+    fill: $green-cyan;
+    opacity: 1;
+  }
+
+  &:active .catalog-item__svg {
+    opacity: 0.3;
+  }
 }

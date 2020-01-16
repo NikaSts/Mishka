@@ -9,7 +9,6 @@
   <link rel="preload" type="font/woff2" href="fonts/opensans.woff2" as="font">
   <link rel="preload" type="font/woff2" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -35,11 +34,19 @@
       </ul>
       <ul class="main-nav__list main-nav__list--user user-list">
         <li class="user-list__item">
-          <a class="user-list__link user-list__link--search" href="#"><span class="user-list__span">Поиск по
+          <a class="user-list__link user-list__link--search" href="#">
+            <svg class="user-list__svg user-list__svg--search" width="17.6px" height="17.6px">
+              <use xlink:href="img/svg/sprite.svg#icon-search"></use>
+            </svg>
+            <span class="user-list__span">Поиск по
               сайту</span></a>
         </li>
         <li class="user-list__item">
-          <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
+          <a class="user-list__link user-list__link--cart" href="#">
+            <svg class="user-list__svg user-list__svg--cart" width="20.294px" height="18.849px">
+              <use xlink:href="img/svg/sprite.svg#icon-cart"></use>
+            </svg>
+            Корзина: пока пуста</a>
         </li>
       </ul>
       <ul class="main-nav__list main-nav__list--promo promo-list">
@@ -99,10 +106,16 @@
         <div class="form__fieldset form__fieldset--phone">
           <label class="form__legend" for="phone">Тел</label>
           <input class="form__input" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <svg class="form__svg form__svg--phone" width="24.829px" height="24.333px">
+            <use xlink:href="img/svg/sprite.svg#icon-phone"></use>
+          </svg>
         </div>
         <div class="form__fieldset form__fieldset--email">
           <label class="form__legend" for="email">E-mail</label>
           <input class="form__input" type="email" name="email" id="email" placeholder="Ваш Email*">
+          <svg class="form__svg form__svg--email" width="32px" height="32px">
+            <use xlink:href="img/svg/sprite.svg#icon-mail"></use>
+          </svg>
         </div>
       </div>
       <div class="form__fieldset form__fieldset--message">
@@ -119,29 +132,49 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo-link"><img class="page-footer__logo-image" src="https://via.placeholder.com/86x35"
-          width="102" height="34" alt="Логотип онлайн-школы веб разработки HTML Academy"></a>
+      <a class="page-footer__logo-link">
+        <svg class="page-footer__logo-svg" width="101.615px" height="34.056px">
+          <use xlink:href="img/svg/sprite.svg#logo-footer"></use>
+        </svg>
+      </a>
       <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--instagram" href="#" aria-label="Мишка в Инстаграме"></a>
+          <a class="social-list__link social-list__link--instagram" href="#" aria-label="Мишка в Инстаграме">
+            <svg class="social-list__svg social-list__svg--insta" width="21.769px" height="21.334px">
+              <use xlink:href="img/svg/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook" href="#" aria-label="Мишка в Фейсбуке"></a>
+          <a class="social-list__link social-list__link--facebook" href="#" aria-label="Мишка в Фейсбуке">
+            <svg class="social-list__svg social-list__svg--fb" width="14.962px" height="27.718px">
+              <use xlink:href="img/svg/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--twitter" href="#" aria-label="Мишка в Твиттере"></a>
+          <a class="social-list__link social-list__link--twitter" href="#" aria-label="Мишка в Твиттере">
+            <svg class="social-list__svg social-list__svg--twitter" width="23.494px" height="20.168px">
+              <use xlink:href="img/svg/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
         <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo-image" src="https://via.placeholder.com/27x34" width="27" height="34"
-            alt="Логотип HTML Academy">
+          <p class="copyright__text">Разработано</p>
+          <svg class="copyright__logo-svg" width="26.943px" height="34.09px">
+            <use xlink:href="img/svg/sprite.svg#logo-htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>
   </footer>
 
+  <script src="js/script.js"></script>
+  <script src="js/picturefill.js" async></script>
+  <script src="js/svg4everybody.js"></script>
+  <script src="js/svgxuse.js" defer></script>
 </body>
 
 </html>

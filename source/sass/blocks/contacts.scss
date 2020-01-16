@@ -3,16 +3,13 @@
   padding: 36px 0 39px 0;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
     padding: 55px 0 57px 0;
-    background: url("../img/svg/icon-flag.svg") no-repeat 668px 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     min-height: 457px; // Временно
     padding: 70px 50px 0 220px;
-    background-position: 113px 133px;
   }
 }
 
@@ -24,8 +21,8 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width - 100px;
-    margin: 0 auto 47px auto;
+    width: 675px;
+    margin: -2px auto 47px auto;
     font-size: 43px;
     line-height: 50px;
   }
@@ -35,6 +32,23 @@
     font-size: 53px;
     line-height: 57px;
     letter-spacing: -0.01em;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 82px;
+      top: 38px;
+      right: 51px;
+      background: url("../img/svg/icon-flag.svg") no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 132px;
+      left: 113px;
+    }
   }
 }
 
