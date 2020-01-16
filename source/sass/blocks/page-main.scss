@@ -130,6 +130,11 @@
       font-size: 17px;
       line-height: 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 698px;
+      padding: 114px 0 10px 0;
+    }
   }
 }
 
