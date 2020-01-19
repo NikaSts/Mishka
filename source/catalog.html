@@ -87,7 +87,7 @@
             <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
             <div class="catalog-item__button-wrapper">
               <p class="catalog-item__price">1 200 руб.</p>
-              <button class="catalog-item__cart-button" type="button">
+              <button class="catalog-item__cart-button modal-open-js" type="button">
                 <svg class="catalog-item__svg" width="20.294px" height="18.849px">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
@@ -118,7 +118,7 @@
             <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
             <div class="catalog-item__button-wrapper">
               <p class="catalog-item__price">690 руб.</p>
-              <button class="catalog-item__cart-button" type="button">
+              <button class="catalog-item__cart-button modal-open-js" type="button">
                 <svg class="catalog-item__svg" width="20.294px" height="18.849px">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
@@ -149,7 +149,7 @@
             <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
             <div class="catalog-item__button-wrapper">
               <p class="catalog-item__price">1 500 руб.</p>
-              <button class="catalog-item__cart-button" type="button">
+              <button class="catalog-item__cart-button modal-open-js" type="button">
                 <svg class="catalog-item__svg" width="20.294px" height="18.849px">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
@@ -226,24 +226,23 @@
     </div>
   </footer>
 
+  <div class="modal__overlay-js"></div>
   <section class="modal">
-    <div class="modal__wrapper">
-      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
-      <form class="modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="modal-form__fieldset">
-          <legend class="modal-form__legend">Выберите размер:</legend>
-          <div class="modal-form__inputs-wrapper">
-            <label class="modal-form__label" for="small">S</label>
-            <input class="visually-hidden" type="radio" name="size" value="small" id="small" checked>
-            <label class="modal-form__label" for="medium">M</label>
-            <input class="visually-hidden" type="radio" name="size" value="medium" id="medium">
-            <label class="modal-form__label" for="large">L</label>
-            <input class="visually-hidden" type="radio" name="size" value="large" id="large">
-          </div>
-        </fieldset>
-        <button class="modal-form__add-button" type="submit">Добавить</button>
-      </form>
-    </div>
+    <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+    <form class="modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="modal-form__fieldset">
+        <legend class="modal-form__legend">Выберите размер:</legend>
+        <div class="modal-form__inputs-wrapper">
+          <input class="visually-hidden" type="radio" name="size" value="small" id="small" checked>
+          <label class="modal-form__label" for="small">S</label>
+          <input class="visually-hidden" type="radio" name="size" value="medium" id="medium">
+          <label class="modal-form__label" for="medium">M</label>
+          <input class="visually-hidden" type="radio" name="size" value="large" id="large">
+          <label class="modal-form__label" for="large">L</label>
+        </div>
+      </fieldset>
+      <button class="modal-form__add-button" type="submit">Добавить</button>
+    </form>
   </section>
 
   <script src="js/script.js"></script>
