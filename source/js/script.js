@@ -7,10 +7,9 @@ var overlay = document.querySelector('.modal__overlay-js')
 var openModal = document.querySelectorAll('.modal-open-js');
 var addButton = modal.querySelector('.modal-form__add-button');
 
-//var form = document.querySelector('form');
-//var sendButton = form.querySelector('.form__send-button');
 
 // скрытие мобильного меню
+
 for (var i = 0; i < mobileMenu.length; i++) {
   mobileMenu[i].classList.remove('main-nav__list--open');
   mobileMenu[i].classList.add('main-nav__list--close');
@@ -25,7 +24,6 @@ openButton.addEventListener('click', function (evt) {
     mobileMenu[i].classList.toggle('main-nav__list--open');
   };
 });
-
 
 // открытие и закрытие модального окна
 
