@@ -8,10 +8,14 @@
   <title>HTML Academy: Мишка</title>
   <link rel="preload" type="font/woff2" href="fonts/opensans.woff2" as="font">
   <link rel="preload" type="font/woff2" href="fonts/opensansbold.woff2" as="font">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
 <body>
+
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
   <header class="page-header">
     <nav class="page-header__nav main-nav">
@@ -36,7 +40,7 @@
         <li class="user-list__item">
           <a class="user-list__link user-list__link--search" href="#">
             <svg class="user-list__svg user-list__svg--search" width="17.6px" height="17.6px">
-              <use xlink:href="img/svg/sprite.svg#icon-search"></use>
+              <use xlink:href="#icon-search"></use>
             </svg>
             <span class="user-list__span">Поиск по
               сайту</span></a>
@@ -44,7 +48,7 @@
         <li class="user-list__item">
           <a class="user-list__link user-list__link--cart" href="#">
             <svg class="user-list__svg user-list__svg--cart" width="20.294px" height="18.849px">
-              <use xlink:href="img/svg/sprite.svg#icon-cart"></use>
+              <use xlink:href="#icon-cart"></use>
             </svg>
             Корзина: пока пуста</a>
         </li>
@@ -67,6 +71,11 @@
         <li class="catalog__item catalog-item">
           <a class="catalog-item__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)"
                 srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -83,9 +92,9 @@
             <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
             <div class="catalog-item__button-wrapper">
               <p class="catalog-item__price">1 200 руб.</p>
-              <button class="catalog-item__cart-button" type="button">
+              <button class="catalog-item__cart-button modal-open-js" type="button">
                 <svg class="catalog-item__svg" width="20.294px" height="18.849px">
-                  <use xlink:href="img/svg/sprite.svg#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
               </button>
             </div>
@@ -98,6 +107,7 @@
                 srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)"
                 srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -114,9 +124,9 @@
             <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
             <div class="catalog-item__button-wrapper">
               <p class="catalog-item__price">690 руб.</p>
-              <button class="catalog-item__cart-button" type="button">
+              <button class="catalog-item__cart-button modal-open-js" type="button">
                 <svg class="catalog-item__svg" width="20.294px" height="18.849px">
-                  <use xlink:href="img/svg/sprite.svg#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
               </button>
             </div>
@@ -129,6 +139,7 @@
                 srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)"
                 srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -145,9 +156,9 @@
             <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
             <div class="catalog-item__button-wrapper">
               <p class="catalog-item__price">1 500 руб.</p>
-              <button class="catalog-item__cart-button" type="button">
+              <button class="catalog-item__cart-button modal-open-js" type="button">
                 <svg class="catalog-item__svg" width="20.294px" height="18.849px">
-                  <use xlink:href="img/svg/sprite.svg#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
               </button>
             </div>
@@ -157,9 +168,9 @@
     </section>
     <section class="page-main__manufacture manufacture" aria-labelledby="product-manufacture">
       <video class="manufacture__video" preload="metadata" aria-describedby="video-description">
-        <source src="video.ogv" type="video/ogg">
-        <source src="video.mp4" type="video/mp4">
-        <source src="video.webm" type="video/webm">
+        <source src="#video.ogv" type="video/ogg">
+        <source src="#video.mp4" type="video/mp4">
+        <source src="#video.webm" type="video/webm">
         <div data-poster="img/video-mobile@1x.jpg"></div>
         <div data-poster="img/video-mobile@2x.jpg" data-media="(min-device-pixel-ratio: 2.0)"></div>
         <div data-poster="img/video-tablet@1x.jpg" data-media="(min-width: 768px)"></div>
@@ -185,28 +196,28 @@
     <div class="page-footer__wrapper">
       <a class="page-footer__logo-link">
         <svg class="page-footer__logo-svg" width="101.615px" height="34.056px">
-          <use xlink:href="img/svg/sprite.svg#logo-footer"></use>
+          <use xlink:href="#logo-footer"></use>
         </svg>
       </a>
       <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
           <a class="social-list__link social-list__link--instagram" href="#" aria-label="Мишка в Инстаграме">
             <svg class="social-list__svg social-list__svg--insta" width="21.769px" height="21.334px">
-              <use xlink:href="img/svg/sprite.svg#icon-insta"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link social-list__link--facebook" href="#" aria-label="Мишка в Фейсбуке">
             <svg class="social-list__svg social-list__svg--fb" width="14.962px" height="27.718px">
-              <use xlink:href="img/svg/sprite.svg#icon-fb"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link social-list__link--twitter" href="#" aria-label="Мишка в Твиттере">
             <svg class="social-list__svg social-list__svg--twitter" width="23.494px" height="20.168px">
-              <use xlink:href="img/svg/sprite.svg#icon-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
@@ -215,31 +226,30 @@
         <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">Разработано</p>
           <svg class="copyright__logo-svg" width="26.943px" height="34.09px">
-            <use xlink:href="img/svg/sprite.svg#logo-htmlacademy"></use>
+            <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
 
+  <div class="modal__overlay-js"></div>
   <section class="modal">
-    <div class="modal__wrapper">
-      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
-      <form class="modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="modal-form__fieldset">
-          <legend class="modal-form__legend">Выберите размер:</legend>
-          <div class="modal-form__inputs-wrapper">
-            <label class="modal-form__label" for="small">S</label>
-            <input class="visually-hidden" type="radio" name="size" value="small" id="small" checked>
-            <label class="modal-form__label" for="medium">M</label>
-            <input class="visually-hidden" type="radio" name="size" value="medium" id="medium">
-            <label class="modal-form__label" for="large">L</label>
-            <input class="visually-hidden" type="radio" name="size" value="large" id="large">
-          </div>
-        </fieldset>
-        <button class="modal-form__add-button" type="submit">Добавить</button>
-      </form>
-    </div>
+    <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+    <form class="modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="modal-form__fieldset">
+        <legend class="modal-form__legend">Выберите размер:</legend>
+        <div class="modal-form__inputs-wrapper">
+          <input class="visually-hidden" type="radio" name="size" value="small" id="small" checked>
+          <label class="modal-form__label" for="small">S</label>
+          <input class="visually-hidden" type="radio" name="size" value="medium" id="medium">
+          <label class="modal-form__label" for="medium">M</label>
+          <input class="visually-hidden" type="radio" name="size" value="large" id="large">
+          <label class="modal-form__label" for="large">L</label>
+        </div>
+      </fieldset>
+      <button class="modal-form__add-button" type="submit">Добавить</button>
+    </form>
   </section>
 
   <script src="js/script.js"></script>

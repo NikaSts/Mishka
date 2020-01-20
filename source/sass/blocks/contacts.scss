@@ -141,7 +141,10 @@
 }
 
 .contacts__map {
+  position: relative;
+  display: flex;
   width: 100%;
+  height: 457px;
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
@@ -153,17 +156,32 @@
     top: 71px;
     right: 51px;
     width: 525px;
-    height: 457px;
   }
 }
 
 .contacts__picture {
-  display: none;
   margin: 0 auto;
 }
 
 .contacts__image {
-  display: none;
+  width: 320px;
+  height: 457px;
+  object-fit: cover;
+  object-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
+}
+
+.contacts__yandex-map {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
 }
 
 .contacts__feedback-button {

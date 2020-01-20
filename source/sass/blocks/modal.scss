@@ -1,4 +1,4 @@
-.modal {
+.modal__overlay-js {
   display: none;
   position: fixed;
   top: 0;
@@ -9,12 +9,11 @@
   z-index: 10;
 }
 
-.modal__wrapper {
-  position: absolute;
+.modal {
+  display: none;
+  position: fixed;
   top: 50%;
   left: 50%;
-  display: flex;
-  flex-direction: column;
   width: $mobile-width;
   min-height: 336px;
   padding: 30px 29px 43px 29px;
@@ -28,6 +27,10 @@
   @media (min-width: $tablet-width) {
     width: 567px;
     padding: 33px 108px 43px 106px;
+  }
+
+  &--open {
+    display: block;
   }
 }
 
