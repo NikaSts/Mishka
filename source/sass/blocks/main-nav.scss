@@ -127,6 +127,7 @@
   &--open {
     @media (max-width: $tablet-width) {
       display: block;
+      width: 320px;
     }
   }
 
