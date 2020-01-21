@@ -14,8 +14,7 @@ for (var i = 0; i < mobileMenu.length; i++) {
 // открытие и закрытие мобильного меню
 
 openButton.addEventListener('click', function (evt) {
-    openButton.classList.toggle('open-js');
- //   openButton.classList.toggle(' ');
+  openButton.classList.toggle('open-js');
   for (var i = 0; i < mobileMenu.length; i++) {
     evt.preventDefault();
     mobileMenu[i].classList.toggle('main-nav__list--close');
