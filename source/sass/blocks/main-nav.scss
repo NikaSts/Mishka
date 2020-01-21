@@ -75,6 +75,14 @@
       0 6px 0 0,
       0 12px 0 0;
   }
+
+  &.open-js::after {
+    top: 30px;
+    width: 20px;
+    height: 20px;
+    background: transparent url("../img/svg/icon-menu-close.svg") no-repeat center;
+    box-shadow: none;
+  }
 }
 
 .main-nav__text {

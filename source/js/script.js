@@ -1,6 +1,7 @@
 var mainNav = document.querySelector('.main-nav');
 var openButton = mainNav.querySelector('.main-nav__open-button');
 var mobileMenu = mainNav.querySelectorAll('.mobile-menu-open-js');
+var modal = document.querySelector('.modal');
 
 
 // скрытие мобильного меню
@@ -13,6 +14,7 @@ for (var i = 0; i < mobileMenu.length; i++) {
 // открытие и закрытие мобильного меню
 
 openButton.addEventListener('click', function (evt) {
+  openButton.classList.toggle('open-js');
   for (var i = 0; i < mobileMenu.length; i++) {
     evt.preventDefault();
     mobileMenu[i].classList.toggle('main-nav__list--close');
@@ -24,7 +26,6 @@ openButton.addEventListener('click', function (evt) {
 
 if (modal) {
   var addButton = modal.querySelector('.modal-form__add-button');
-  var modal = document.querySelector('.modal');
   var overlay = document.querySelector('.modal__overlay-js')
   var openModal = document.querySelectorAll('.modal-open-js');
 
