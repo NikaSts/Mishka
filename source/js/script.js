@@ -15,7 +15,7 @@ for (var i = 0; i < mobileMenu.length; i++) {
 
 openButton.addEventListener('click', function (evt) {
     openButton.classList.toggle('open-js');
-    openButton.classList.toggle('');
+ //   openButton.classList.toggle(' ');
   for (var i = 0; i < mobileMenu.length; i++) {
     evt.preventDefault();
     mobileMenu[i].classList.toggle('main-nav__list--close');
