@@ -31,4 +31,8 @@
 .copyright__logo-svg {
   fill: $green-cyan;
   pointer-events: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+  }
 }

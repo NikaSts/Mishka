@@ -115,6 +115,10 @@
   @media (min-width: $tablet-width) {
     font-size: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 6px 0 12px 0;
+  }
 }
 
 .catalog-item__button-wrapper {
