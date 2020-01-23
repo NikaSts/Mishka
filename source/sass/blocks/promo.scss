@@ -30,7 +30,7 @@
   order: -1;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 46px -3px;
+    margin: 0 auto 49px -3px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -108,7 +108,7 @@
 
 .promo__field,
 .promo__value {
-  padding: 9px 30px 10px 0;
+  padding: 9px 28px 10px 0;
   font-size: 15px;
   line-height: 20px;
 }
@@ -130,7 +130,7 @@
 
 .promo__button-wrapper {
   @media (min-width: $tablet-width) {
-    margin-top: -116px;
+    margin-top: -118px;
   }
 
   @media (min-width: $desktop-width) {

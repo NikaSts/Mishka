@@ -3,13 +3,13 @@
   padding: 36px 0 39px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 0 57px 0;
+    padding: 56px 0 57px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     min-height: 457px; // Временно
-    padding: 70px 50px 0 220px;
+    padding: 69px 50px 0 220px;
   }
 }
 
@@ -22,7 +22,7 @@
 
   @media (min-width: $tablet-width) {
     width: 675px;
-    margin: -2px auto 47px auto;
+    margin: -2px auto 49px auto;
     font-size: 43px;
     line-height: 50px;
   }

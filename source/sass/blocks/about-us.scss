@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    padding: 56px 50px 84px 50px;
+    padding: 55px 50px 84px 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,13 +37,13 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
+  padding: 4px 0 0 0;
   list-style: none;
-
 
   @media (min-width: $tablet-width) {
     display: block;
     margin-top: -8px;
+    padding: 0;
     column-count: 2;
     column-gap: 1px;
   }
@@ -66,50 +66,50 @@
   }
 
   &--eco-materials {
-    background: url("../img/svg/icon-feature-flower.svg") no-repeat 8px 32px;
+    background: url("../img/svg/icon-feature-flower.svg") no-repeat 8px 28px;
 
     @media (min-width: $tablet-width) {
-      background-position: 9px 58px;
+      background-position: 9px 56px;
     }
   }
 
   &--scandinavian-style {
-    background: url("../img/svg/icon-feature-money.svg") no-repeat -1px 32px;
+    background: url("../img/svg/icon-feature-money.svg") no-repeat -1px 29px;
 
     @media (min-width: $tablet-width) {
-      background-position: 1px 59px;
+      background-position: 1px 57px;
     }
   }
 
   &--like-increaser {
-    background: url("../img/svg/icon-feature-heart.svg") no-repeat 8px 38px;
+    background: url("../img/svg/icon-feature-heart.svg") no-repeat 8px 34px;
 
     @media (min-width: $tablet-width) {
-      background-position: 9px 64px;
+      background-position: 9px 62px;
     }
   }
 
   &--handmade {
-    background: url("../img/svg/icon-feature-ball.svg") no-repeat 4px 35px;
+    background: url("../img/svg/icon-feature-ball.svg") no-repeat 4px 31px;
 
     @media (min-width: $tablet-width) {
-      background-position: 2px 61px;
+      background-position: 2px 59px;
     }
   }
 
   &--domestic-producer {
-    background: url("../img/svg/icon-feature-rocket.svg") no-repeat -1px 36px;
+    background: url("../img/svg/icon-feature-rocket.svg") no-repeat -1px 32px;
 
     @media (min-width: $tablet-width) {
-      background-position: -2px 62px;
+      background-position: -2px 60px;
     }
   }
 
   &--gift-box {
-    background: url("../img/svg/icon-feature-gift.svg") no-repeat 3px 34px;
+    background: url("../img/svg/icon-feature-gift.svg") no-repeat 3px 30px;
 
     @media (min-width: $tablet-width) {
-      background-position: 2px 60px;
+      background-position: 2px 58px;
     }
   }
 }

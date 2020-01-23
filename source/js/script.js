@@ -26,7 +26,7 @@ openButton.addEventListener('click', function (evt) {
 
 if (modal) {
   var addButton = modal.querySelector('.modal-form__add-button');
-  var overlay = document.querySelector('.modal__overlay-js')
+  var overlay = document.querySelector('.overlay-js')
   var openModal = document.querySelectorAll('.modal-open-js');
 
   for (var i = 0; i < openModal.length; i++) {
