@@ -16,7 +16,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 260px;
-    padding: 94px 0 94px 0;
+    padding: 94px 0;
   }
 
   &::after {
@@ -85,7 +85,7 @@
     @media (min-width: $tablet-width) {
       min-height: 746px;
       margin-bottom: -120px;
-      padding: 153px 0 92px 0;
+      padding: 153px 0;
     }
   }
 }
