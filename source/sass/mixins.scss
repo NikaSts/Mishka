@@ -1,5 +1,6 @@
 @mixin button($font-color, $bg-color) {
   display: block;
+  font-family: "Open Sans", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;

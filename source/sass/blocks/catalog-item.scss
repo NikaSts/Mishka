@@ -38,6 +38,15 @@
   @media (min-width: $desktop-width) {
     height: 462px;
   }
+
+  &:hover + .catalog-item__info-wrapper,
+  &:focus + .catalog-item__info-wrapper {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active + .catalog-item__info-wrapper {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
 }
 
 .catalog-item__image {
@@ -71,8 +80,7 @@
     width: 314px;
     min-height: 195px;
 
-    &:hover,
-    &:focus {
+    &:hover {
       box-shadow: 0 6px 10px rgba($black, 0.1);
     }
 
@@ -84,6 +92,10 @@
 
 .catalog-item__title-link {
   display: block;
+
+  &:focus .catalog-item__title {
+    color: rgba($black, 0.6);
+  }
 }
 
 .catalog-item__title {
@@ -97,8 +109,7 @@
     font-size: 20px;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: rgba($black, 0.6);
   }
 
